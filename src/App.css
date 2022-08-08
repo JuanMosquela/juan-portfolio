@@ -7,13 +7,14 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+   
     
     
 }
 
 html{
     font-size: 62.5%;
-    scroll-behavior: smooth;
+    
 }
 
 
@@ -40,12 +41,7 @@ p{
     font-weight: 300;
 }
 
-p, a, textarea{
-    
-     
-    font-family: 'Nunito Sans', sans-serif;
-    
-}
+
 
 :root{
     --body-color:#1E1F21;

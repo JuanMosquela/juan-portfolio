@@ -8,13 +8,16 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import ProyectDetail from './components/proyectDetail/ProyectDetail';
 import ThemeProvider from './context/ThemeProvider';
+import ScrollToTop from './components/ScrollToTop';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <BrowserRouter>
+  <ScrollToTop />
     <ThemeProvider>
+      
       <Routes> 
         <Route path='/' element={<App />}>              
           <Route index element={<Home />} />
