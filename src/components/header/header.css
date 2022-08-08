@@ -21,7 +21,7 @@
     position: fixed;
     top: 20px;
     left: 15px;
-     font-size: 3rem;
+     font-size: 2.6rem;
    
     z-index: 1000;
     
@@ -86,6 +86,17 @@
     font-size: 1.8rem;
     text-transform: capitalize;
     color: #000;
+}
+
+@media (max-width:500px){
+    .navbar{
+        width: 40px;
+    }
+
+    .theme-icons{
+        left: 10px;
+        font-size: 1.8rem;
+    }
 }
 
 
