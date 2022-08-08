@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+section{
+    
+    min-height: 100vh;
+    font-family: 'Adamina', serif;
+    font-family: 'Secular One', sans-serif;
+    padding: 0 10%;
+    overflow-x: hidden;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2{
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+p{
+    font-size: 1.6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p, a{
+    font-family: 'Monda', sans-serif;
+}
+
+:root{
+    --body-color:#1E1F21;
+    --background-color:#27282D;
+    --background-color-light:#323336;
+    --hover-color: #2C69A6;
+    --fs-a: 1.6rem
+}
+
+button, i{
+    transition: .3s linear;
+}
+
+@media (max-width:500px){
+    section{
+      padding: 2rem 2rem;
+    }
 }

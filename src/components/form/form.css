@@ -1,0 +1,86 @@
+.contact{
+    padding: 0;
+}
+
+.contact-wrapper{
+   
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-around;  
+      
+    
+}
+
+.contact-wrapper .contact-info{
+    width: 300px;
+}
+
+.contact-wrapper .contact-info .contact-list{
+    margin-bottom: 2rem;   
+}
+
+.contact-wrapper .contact-info .contact-list h3{
+    font-size: 1.4rem;   
+}
+
+.contact-wrapper .contact-info .contact-list p, a{
+    font-size: 1.4rem;  
+}
+
+.form-container{    
+    width: 600px;    
+}
+
+.input-group{       
+    position: relative;
+}
+
+.input-group label{
+    font-size: 1.6rem;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 1.5rem 1rem;
+    margin-bottom: 25px;    
+    border: none;
+    outline: none;   
+    
+}
+
+.form-container button{
+    font-size: 1.8rem;
+    color: #FFF;
+    padding: 1rem 2.5rem;
+    margin-right: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    border: 1px solid #FFF;
+    cursor: pointer;
+}
+
+@media (max-width:600px){
+
+    .contact{
+        padding: 0 2%;
+        
+    }
+
+    .contact-wrapper{
+        justify-content: center;
+    }
+
+    
+    
+
+    .form-container button{
+        width: 100%;
+    }
+
+    
+    
+}

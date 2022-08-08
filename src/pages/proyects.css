@@ -1,0 +1,41 @@
+.proyects-wrapper{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px, 1fr));
+    gap: 2rem;
+   
+    
+    align-items: center;
+
+    
+}
+
+.proyects-wrapper figure{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.proyects-wrapper figure img{
+    width: 100%;
+    
+    
+}
+
+.proyects-wrapper img:hover{
+    animation: move-down 10s linear;
+}
+
+@keyframes move-down {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-70%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
