@@ -59,7 +59,7 @@ button, i{
 
 @media (max-width:500px){
   section{
-    margin-left: 6rem;
+    margin-left: calc(40px + 5px);
     padding: 0 2%;
   }
 }
