@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './hero.css';
-import JuanMosquellaCV from '../../img/cv.pdf';
+import JuanMosquellaCV from '../../img/Mosquella-cv.pdf';
 import { useTypewriter} from 'react-simple-typewriter'
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeProvider';
