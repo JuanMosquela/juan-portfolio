@@ -1,9 +1,17 @@
+.container-proyects-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 80%;
+    margin: 0 auto; */
+}
+
 .proyects-wrapper{
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px, 1fr));
-    gap: 2rem;
-   
-    
+    grid-template-columns:repeat(auto-fit,minmax(400px, 1fr));
+    gap: 2rem;    
     align-items: center;
 
     
@@ -11,7 +19,7 @@
 
 .proyects-wrapper figure{
     width: 100%;
-    height: 200px;
+    height: 280px;
     object-fit: cover;
     cursor: pointer;
     border-radius: 12px;

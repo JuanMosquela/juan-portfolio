@@ -48,7 +48,7 @@
 }
 
 .clip-bg{
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path: inset(0 0 0 24%);
     position: absolute;
     right: 0;
     top: 0;

@@ -58,7 +58,8 @@ button, i{
 }
 
 @media (max-width:500px){
-    section{
-      padding: 2rem 2rem;
-    }
+  section{
+    margin-left: 6rem;
+    padding: 0 2%;
+  }
 }

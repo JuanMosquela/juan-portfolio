@@ -66,5 +66,11 @@
     .about-container{
         flex-direction: column;
     }
+
+    .about-container .picture-profile figure{
+        width: 260px;
+        height: 300px;
+
+    }
     
 }

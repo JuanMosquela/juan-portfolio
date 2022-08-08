@@ -1,5 +1,6 @@
 .container-proyects{
-    min-height: 90vh;  
+    min-height: 60vh; 
+    overflow: hidden; 
     
    
 }

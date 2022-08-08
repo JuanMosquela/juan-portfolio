@@ -5,7 +5,7 @@ import {IoLogoJavascript} from 'react-icons/io'
 import {DiHtml5, DiCss3, DiGit} from 'react-icons/di'
 import {FaReact, FaBootstrap, FaSass} from 'react-icons/fa'
 import {AiFillGithub} from 'react-icons/ai'
-import {SiMaterialui} from 'react-icons/si'
+import {SiMaterialui, SiFirebase} from 'react-icons/si'
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeProvider";
 
@@ -16,7 +16,7 @@ const About = () => {
   const { theme } = useContext(ThemeContext)
 
   const icons = [
-    <DiHtml5 />,
+    <DiHtml5 className="html" />,
     <DiCss3 />, 
     <IoLogoJavascript />, 
     <FaReact />, 
@@ -24,8 +24,11 @@ const About = () => {
     <FaSass />,
     <DiGit />, 
     <AiFillGithub />, 
-    <SiMaterialui />
+    <SiMaterialui />,
+    <SiFirebase />
   ]
+
+  
 
   return (
       <section id="about">
@@ -43,6 +46,7 @@ const About = () => {
               <div className="icons-container">
                 {
                   icons?.map((icon, index) => (
+                    
                     <i key={index}>{icon}</i>                    
                   ))
                 }

@@ -5,7 +5,7 @@ import './proyects.css'
 
 const Proyects = () => {
   return (
-    <section className='container-proyects' >
+    <section className='container-proyects-section' >
         <Title title='Proyectos:' span='algunos de mis trabajos recientes' />
         <div className="proyects-wrapper">
             {proyectsData.map(proyect => (
