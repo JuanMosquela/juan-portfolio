@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Secular+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
 
 
 *{
@@ -25,24 +21,30 @@ html{
 section{
     
     min-height: 100vh;
-    font-family: 'Adamina', serif;
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     padding: 0 10%;
     overflow-x: hidden;
     
+    
 }
 
+
+
 h1, h2{
-    font-family: 'Prompt', sans-serif;
-    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
 }
 
 p{
     font-size: 1.6rem;
+    font-weight: 300;
 }
 
-p, a{
-    font-family: 'Monda', sans-serif;
+p, a, textarea{
+    
+     
+    font-family: 'Nunito Sans', sans-serif;
+    
 }
 
 :root{
@@ -57,9 +59,14 @@ button, i{
     transition: .3s linear;
 }
 
-@media (max-width:500px){
+@media (max-width:600px){
+
+    html{
+        font-size: 58.5%;
+    }
+
   section{
-    margin-left: calc(40px + 5px);
+    margin-left: 40px;
     padding: 0 2%;
   }
 }

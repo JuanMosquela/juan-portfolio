@@ -23,7 +23,7 @@ const Header = () => {
             <ul>
                 <NavLink className='nav-link' to='/'><li><AiFillHome style={{color: theme ? '#000' : '#FFF'}} /></li></NavLink>
                 <NavLink className='nav-link' to='/proyectos'><li><MdWork style={{color: theme ? '#000' : '#FFF'}} /></li></NavLink>
-                <NavLink className='nav-link' to='/contacto'><li><MdWork style={{color: theme ? '#000' : '#FFF'}} /></li></NavLink>
+                <NavLink className='nav-link' to='/contacto'><li><AiOutlineMail style={{color: theme ? '#000' : '#FFF'}} /></li></NavLink>
                 
                 
             </ul>            

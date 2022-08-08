@@ -10,7 +10,7 @@ const Hero = () => {
   const {theme} = useContext( ThemeContext )
 
   const {text} = useTypewriter({
-    words: ['Desarrollador Front-end', 'Freelance autodidacta', 'Amante de Marvel!'],
+    words: ['Desarrollador Web', 'Front-end Developer', 'Amante de Marvel!'],
     loop: 0,    
     
   })
