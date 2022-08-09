@@ -40,6 +40,13 @@
     font-weight: 700;
 }
 
+.success{
+    margin-top: 1.5rem;
+    color: rgb(54, 194, 54);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 
 .form-container button{
     font-size: 1.8rem;

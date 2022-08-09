@@ -1,11 +1,15 @@
 import { Formik, useFormik } from "formik"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { ThemeContext } from "../../context/ThemeProvider";
 import * as yup from 'yup';
 import emailjs, {send} from 'emailjs-com'
 import './form.css'
 
 const Form = () => { 
+
+  const [loading, setLoading] = useState(false)
+
+  const [form, setForm] = useState(false)
 
    
 
@@ -18,11 +22,25 @@ const Form = () => {
     message: yup.string().min(2, 'Mensaje muy corto!').max(100, 'Mensaje muy largo!').required('Este campo es requerido')
   })
 
-  function SendEmail(object) {
+  const SendEmail = (object) => {
     console.log(object)
+    setLoading(true)
+    
     emailjs.send("service_ijebytp", "template_sr0vrs4", object,"uOFt-AsEDNOS6pJPk" )
+    
         .then((result) => {
-            console.log(result.text)
+          setTimeout(() => {
+            
+            setLoading(false)
+            resetForm()
+            setForm(true)
+            setInterval(() => {
+              setForm(false)
+              
+            }, 3000);
+            
+            
+          }, 1000);
         }, (error) => {
             console.log(error.text)
         })
@@ -36,9 +54,9 @@ const Form = () => {
       message:''
     },
     onSubmit: (values) => {
-       console.log(values)
-       SendEmail(values)
-       resetForm()
+      setLoading(true)
+      SendEmail(values)     
+       
     },    
     validationSchema: basicSchemas  
 
@@ -95,6 +113,8 @@ const Form = () => {
           <button type="submit">Enviar</button>
           
         </form>
+        {form ? <span className="success">Mensaje enviado exitosamente</span> : null}
+        
 
           
     
