@@ -1,4 +1,4 @@
-import { Formik, useFormik } from "formik"
+import { useFormik } from "formik"
 import { useContext, useState } from "react"
 import { ThemeContext } from "../../context/ThemeProvider";
 import * as yup from 'yup';
@@ -22,29 +22,29 @@ const Form = () => {
     message: yup.string().min(2, 'Mensaje muy corto!').max(100, 'Mensaje muy largo!').required('Este campo es requerido')
   })
 
-  const SendEmail = (object) => {
-    console.log(object)
-    setLoading(true)
-    
-    emailjs.send("service_ijebytp", "template_sr0vrs4", object,"uOFt-AsEDNOS6pJPk" )
-    
-        .then((result) => {
-          setTimeout(() => {
-            
-            setLoading(false)
-            resetForm()
-            setForm(true)
-            setInterval(() => {
-              setForm(false)
+    const SendEmail = (object) => {
+      console.log(object)
+      setLoading(true)
+      
+      emailjs.send("service_ijebytp", "template_sr0vrs4", object,"uOFt-AsEDNOS6pJPk" )
+      
+          .then((result) => {
+            setTimeout(() => {
               
-            }, 3000);
-            
-            
-          }, 1000);
-        }, (error) => {
-            console.log(error.text)
-        })
-}
+              setLoading(false)
+              resetForm()
+              setForm(true)
+              setInterval(() => {
+                setForm(false)
+                
+              }, 3000);
+              
+              
+            }, 1000);
+          }, (error) => {
+              console.log(error.text)
+          })
+  }
   
 
   const {values, errors,handleSubmit, handleChange, handleBlur, touched, resetForm} = useFormik({
@@ -60,7 +60,7 @@ const Form = () => {
     },    
     validationSchema: basicSchemas  
 
-  })   
+  })  
   
 
   return (

@@ -2,7 +2,9 @@ import Form from "../components/form/Form"
 
 const Contact = () => {
   return (
-    <Form />
+    <section className="contact">        
+        <Form />
+    </section>
   )
 }
 export default Contact

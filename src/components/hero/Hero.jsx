@@ -4,6 +4,7 @@ import JuanMosquellaCV from '../../img/Mosquella-cv.pdf';
 import { useTypewriter} from 'react-simple-typewriter'
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeProvider';
+import coding from '../../img/coding.svg'
 
 const Hero = () => {
 
@@ -29,12 +30,10 @@ const Hero = () => {
             <a href={JuanMosquellaCV} download="Juan Mosquella-CV.pdf">Descargar CV</a>
             <Link to='/contacto'>Contactame</Link>
         </div>
-        <div className="clip-bg-container">
+        <img src={coding} alt="" />
+        
 
-          <div className="clip-bg" style={{ backgroundColor: theme ? '#FFF' : '#000' }}>
-        </div>
-
-        </div>
+        
 
     </section>
   )

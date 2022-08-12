@@ -1,16 +1,17 @@
 .hero-container{
     min-height: 100vh;    
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
     
 }
 
-.hero-container .content{
-    position: absolute;
-    left: 10%;
-    top: 40%;
-  
-   
+.hero-container img{
+    width: 600px;
 }
+
 
 .hero-container .content span{
     font-size: 2rem;

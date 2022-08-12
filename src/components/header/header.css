@@ -1,26 +1,29 @@
 .header-container{
-    position: relative;
-}
-
-.navbar{
-    position: fixed;       
-   
-    height: 100vh;
-    width: 60px;       
-    display: flex; 
+    display: flex;
+    position: fixed;
+    height: 70px;
+    width:100%;       
+    
     box-shadow: 1px 5px 30px 5px rgba(0, 0, 0, .1);    
-    justify-content: center; 
+    justify-content: space-around;
+    background-color: aqua;
     align-items: center;   
     gap: 5rem;
     padding: 1.4rem;
-    text-align: center;    
+       
     z-index: 1000;
+    
+}
+
+.navbar{
+    
+    
+   
+    
 }
 
 .theme-icons{
-    position: fixed;
-    top: 20px;
-    left: 15px;
+    
      font-size: 2.6rem;
    
     z-index: 1000;
@@ -29,7 +32,7 @@
 
 .header-container ul {  
     display: flex;
-    flex-direction: column;
+    
     justify-content: center;
     align-items: center;
     gap: 2rem;     

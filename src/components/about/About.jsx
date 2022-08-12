@@ -1,6 +1,6 @@
 import Title from "../title/Title"
 import './about.css';
-import Profile from '../../img/jm-perfil.jpeg'
+
 import {IoLogoJavascript} from 'react-icons/io'
 import {DiHtml5, DiCss3, DiGit} from 'react-icons/di'
 import {FaReact, FaBootstrap, FaSass} from 'react-icons/fa'
@@ -8,6 +8,7 @@ import {AiFillGithub} from 'react-icons/ai'
 import {SiMaterialui, SiFirebase} from 'react-icons/si'
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeProvider";
+import academic from '../../img/academic.svg'
 
 
 
@@ -34,9 +35,7 @@ const About = () => {
       <section id="about">
           <div className="about-container">
             <div className="picture-profile">
-              <figure style={{ border: theme ? '#FFF 3px solid' : '#000 3px solid' }}>
-                <img src={Profile} alt="" />
-              </figure>
+            <img src={academic} alt="" />
             </div>
             <div className="about-content">
               <Title title='Conoceme:' span='un poco sobre mi' />
