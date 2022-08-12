@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
 
 *{
@@ -22,9 +23,10 @@ html{
 section{
     
     min-height: 100vh;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 0 10%;
     overflow-x: hidden;
+    
     
     
 }
@@ -34,6 +36,14 @@ section{
 h1, h2{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
+    
+}
+
+li{
+
+    font-family: 'Poppins', sans-serif;
+
+
 }
 
 p{
@@ -48,7 +58,13 @@ p{
     --background-color:#27282D;
     --background-color-light:#323336;
     --hover-color: #2C69A6;
-    --fs-a: 1.6rem
+    --fs-a: 1.6rem;
+    --black-gradient: linear-gradient(
+        144.39deg,
+        #ffffff -278.56%,
+        #6d6d6d -78.47%,
+        #11101d 91.61%
+      );
 }
 
 button, i{
@@ -62,7 +78,7 @@ button, i{
     }
 
   section{
-    margin-left: 40px;
-    padding: 0 2%;
+    
+    padding: 0 40px;
   }
 }

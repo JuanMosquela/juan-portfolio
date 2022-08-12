@@ -18,8 +18,10 @@
 
 .heading h2{
     font-size: 3.4rem;
+    font-family: 'Poppins', sans-serif;
     display: inline;    
-    text-transform: uppercase;
+   
+    font-weight: 700;
     margin-top: 1.5rem;
     
     

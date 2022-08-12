@@ -27,7 +27,7 @@ const Hero = () => {
               {text}              
                 
             </span>
-            <a href={JuanMosquellaCV} download="Juan Mosquella-CV.pdf">Descargar CV</a>
+            <a href={JuanMosquellaCV} download="Mosquella-CV.pdf">Descargar CV</a>
             <Link to='/contacto'>Contactame</Link>
         </div>
         <img src={coding} alt="" />

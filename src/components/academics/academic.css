@@ -1,0 +1,71 @@
+.academic{
+    min-height: 80vh;
+    
+}
+.container-buttons{
+    margin-bottom: 2rem;
+}
+
+
+
+.academic-container{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.academic-container h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: 'Poppins';
+    margin-bottom: 10px;
+}
+
+
+.academic-container ul li{
+    font-size: 1.6rem;
+    list-style:disc
+}
+
+
+
+
+.academic-content span{
+
+    font-size: 1.2rem;
+    
+    margin-bottom: 1rem;
+}
+
+.academic-container ul{
+    display: grid;
+    gap: 2rem 5rem;
+    width: 70%;
+    
+    text-align: left;   
+     
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem auto;
+    
+}
+
+.academic-content a{
+    font-size: 1.8rem;  
+     
+}
+
+@media (max-width:600px){
+    
+    .academic-container ul{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .container-buttons button{
+        font-size: 10px;
+
+    }
+}

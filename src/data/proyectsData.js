@@ -6,6 +6,35 @@ import lawyer from '../img/lawyer.png';
 import trainer from '../img/fit-trainer.png';
 
 
+export const academicInfo = [
+    {
+        title: 'desarrollo web',
+        duration:'Febrero 2022 - Abril 2022',
+        description: ['Dominio de HTML y CSS', 'Diseño Web responsive', 'Frameworks/pre-procesadores como Bootstrap & SASS','Manejo y control de versiones a traves de Git', 'Publicacion de respositorios y deploy de los mismos en Github'],
+        certificate: 'https://www.coderhouse.com/certificados/6251d63b47841f0019657963'
+        
+
+    },
+    
+    {
+        title: 'javascript',
+        duration:'Mayo 2022 - Junio 2022',
+        description: ['Dominio del DOM', 'Programacion Asincronica', 'Programacion orientada a objetos','Programacion funcional', 'Peticiones de datos via Fetch y Ajax'],
+        certificate: 'https://www.coderhouse.com/certificados/6288d30ff13872001951b243'
+       
+        
+    },
+    {
+        title: 'react',
+        duration:'Junio 2022 - Julio 2022',
+        description: ['Renderizado condicional', 'Manejo y control del estado de la aplicacion', 'Contexto para manejar el estado de manera global', 'Creacion de SPA a traves de React Router', 'Librerias como Material UI y Formik'],
+        certificate: 'https://www.coderhouse.com/certificados/62e1b706e2776700198e730f'
+       
+        
+    }
+]
+
+
 
 const proyectsData = [
     {

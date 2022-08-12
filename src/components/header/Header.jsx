@@ -3,8 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { useContext } from 'react'
 import { ThemeContext } from '../../context/ThemeProvider'
 import {FaMoon, FaSun} from 'react-icons/fa'
-import {AiFillHome, AiOutlineMail} from 'react-icons/ai'
-import {MdWork} from 'react-icons/md'
+
 
 
 
@@ -22,9 +21,9 @@ const Header = () => {
         
         <nav className="navbar" >           
             <ul >
-              <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/'><li>home</li></NavLink>
-              <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/proyectos'><li>proyectos</li></NavLink>
-              <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/contacto'><li  >contacto</li></NavLink>               
+              <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/'>home</NavLink>
+              <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/proyectos'>proyectos</NavLink>
+              <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/contacto'>contacto</NavLink>               
                 
             </ul>            
         </nav>
