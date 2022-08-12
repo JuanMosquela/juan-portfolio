@@ -12,7 +12,7 @@ const Academic = () => {
      
 
     const [info, setInfo] = useState([])
-    const [title, setTitle] = useState([])
+    
     const {theme} = useContext(ThemeContext)
 
     
@@ -22,15 +22,10 @@ const Academic = () => {
         const foundAcademic = academicInfo.filter(el => {
             return el.title === academic
         }) 
-
-        console.log(foundAcademic)
-
-        setInfo(foundAcademic)
-        setTitle(foundAcademic.description)
-        console.log(info)
         
-        
-        
+        if(foundAcademic){
+            setInfo(foundAcademic)
+        }             
 
     }
 
@@ -41,7 +36,7 @@ const Academic = () => {
 
   return (
     <section className="academic">
-        <Title title='Mis estudios:' />
+        <Title title='Cerftificados :' span='cursos realizados' />
         <div className="academic-wrapper">
             <Box className="container-buttons"
                 sx={{
@@ -71,7 +66,7 @@ const Academic = () => {
                                     <li>{e}</li>
                                 ))}
                             </ul>
-                            <a href={el.certificate} target='blank' >Ver titulo</a>                          
+                            <a href={el.certificate} target='blank' >Ver certificado</a>                          
                             
                         </div>                       
                         

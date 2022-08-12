@@ -6,6 +6,16 @@
     margin-bottom: 2rem;
 }
 
+.container-buttons button:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+.container-buttons button:focus{
+    background-color: #000;
+    color: #FFF;
+}
+
 
 
 .academic-container{
@@ -43,9 +53,8 @@
 .academic-container ul{
     display: grid;
     gap: 2rem 5rem;
-    width: 70%;
-    
-    text-align: left;   
+    width: 70%;    
+    text-align: left;  
      
     grid-template-columns: 1fr 1fr;
     margin: 3rem auto;

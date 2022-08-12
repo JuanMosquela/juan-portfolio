@@ -58,7 +58,7 @@ const ProyectsCarrusell = () => {
       <section id="proyects" className="container-proyects" >
         <Title
           className='heading'
-          title='Proyectos que he realizado :'
+          title='Portfolio :'
           span='Conoce mi trabajo' 
         /> 
         <Slider  className="container" {...settings}> 

@@ -4,6 +4,7 @@ import { ThemeContext } from "../../context/ThemeProvider";
 import * as yup from 'yup';
 import emailjs, {send} from 'emailjs-com'
 import './form.css'
+import Title from "../title/Title";
 
 const Form = () => { 
 
@@ -65,6 +66,7 @@ const Form = () => {
 
   return (
     <section className="contact">
+        <Title title='Contacto :' span='¿Te gusto mi trabajo?' />
 
         <form         
           className="form-container" 

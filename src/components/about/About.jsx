@@ -38,9 +38,9 @@ const About = () => {
             <img src={academic} alt="" />
             </div>
             <div className="about-content">
-              <Title title='Conoceme:' span='un poco sobre mi' />
+              <Title title='Conoceme :' span='un poco sobre mi' />
               <p>Soy un apasionado desarrollador freelance que ha realizado proyectos para pequeños emprendedores, aunque tambien tuve la oportunidad de trabajar en conjunto con otros desarrolladores. Siempre me caracterice por ser autodidacta y estar contantemente en aprendizaje. Me entusiasmo el estilo de vida y la gran capacidad de crecimiento que veo en el mundo IT. Actualmente busco mi primer experiencia empresarial para poder demostrar y aportar todos mis conocimientos.</p>
-              <Title title='Mis skills:' />              
+              <Title title='Mis skills :' />              
               <div className="animation-wrapper">
               <div className="icons-container">
                 {

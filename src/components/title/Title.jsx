@@ -8,7 +8,7 @@ const Title = ({ title, span }) => {
 
 
   return (
-    <div className="heading" style={{color: theme ? '#FFF' : '#000'}}>
+    <div className="heading" style={{color: theme ? '#FFF' : '#333'}}>
         <span>{span}</span>
         <h2>{title}</h2> 
     </div>   
