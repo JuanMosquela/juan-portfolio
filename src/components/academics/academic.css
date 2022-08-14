@@ -12,7 +12,7 @@
 }
 
 .container-buttons button:focus{
-    background-color: #000;
+    background-image: linear-gradient(to right top, #3737c9, #4d4bd2, #605edb, #7372e4, #8585ec);;
     color: #FFF;
 }
 

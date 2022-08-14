@@ -10,7 +10,7 @@ export const academicInfo = [
     {
         title: 'desarrollo web',
         duration:'Febrero 2022 - Abril 2022',
-        description: ['Dominio de HTML y CSS', 'Diseño Web responsive', 'Frameworks/pre-procesadores como Bootstrap & SASS','Manejo y control de versiones a traves de Git', 'Publicacion de respositorios y deploy de los mismos en Github'],
+        description: ['Dominio de HTML y CSS', 'Diseño Web responsive', 'Frameworks/pre-procesadores como Bootstrap & SASS','Controlador de versiones: Git & Github', 'Publicacion de respositorios y deploy de los mismos en Github'],
         certificate: 'https://www.coderhouse.com/certificados/6251d63b47841f0019657963'
         
 
@@ -27,7 +27,7 @@ export const academicInfo = [
     {
         title: 'react',
         duration:'Junio 2022 - Julio 2022',
-        description: ['Renderizado condicional', 'Manejo y control del estado de la aplicacion', 'Contexto para manejar el estado de manera global', 'Creacion de SPA a traves de React Router', 'Librerias como Material UI y Formik'],
+        description: ['Renderizado condicional', 'Manejo y control del estado de la aplicacion', 'Context api', 'Creacion de SPA a traves de React Router', 'Librerias como Material UI y Formik'],
         certificate: 'https://www.coderhouse.com/certificados/62e1b706e2776700198e730f'
        
         

@@ -30,6 +30,8 @@
 
 .hero-container .content a{
     font-size: 1.8rem;
+    display: inline-block;
+    width: 200px;
     color: #333;
     padding: 1rem 2.5rem;
     margin-right: 1rem;
@@ -77,11 +79,12 @@
     .hero-container .content  a{
         display: block;
         margin: 10px 0;
+        width: 100%;
         
     }
 
-    .clip-bg{
-        display: none;
+    .hero-container img{
+        width: 400px;
     }
 
 }

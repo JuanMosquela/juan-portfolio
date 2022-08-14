@@ -54,8 +54,8 @@
 
 @media (max-width:600px){
 
-    .about-container{
-        flex-direction: column;
+    .about-container{        
+        flex-direction: column-reverse;
     }
 
     .about-container .picture-profile figure{
@@ -67,6 +67,10 @@
     .about-container .picture-profile figure img{
         left: 15px;
         top: 15px;
+    }
+
+    .about-container img{
+        width: 300px;
     }
     
 }

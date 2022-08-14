@@ -29,9 +29,14 @@
     padding: 1.5rem 1rem;            
     border: none;
     outline: none;  
-    font-size: 1.4rem; 
+    font-size: 1.6rem; 
     font-family: 'Nunito Sans', sans-serif;
     
+    
+}
+
+textarea{
+    margin-bottom: 2rem;
 }
 
 .error{
@@ -63,9 +68,7 @@
 
 @media (max-width:600px){
 
-    .contact{
-        padding: 0 2%;        
-    }
+    
     
 
     .form-container button{

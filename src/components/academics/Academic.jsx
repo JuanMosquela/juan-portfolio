@@ -66,7 +66,7 @@ const Academic = () => {
                                     <li>{e}</li>
                                 ))}
                             </ul>
-                            <a href={el.certificate} target='blank' >Ver certificado</a>                          
+                            <a href={el.certificate} target='blank' style={{ color: theme ? '#FFF' : '#000'}} >Ver certificado</a>                          
                             
                         </div>                       
                         
