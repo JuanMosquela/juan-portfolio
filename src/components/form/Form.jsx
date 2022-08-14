@@ -80,7 +80,8 @@ const Form = () => {
               onChange={handleChange}
               onBlur={handleBlur}
               type="text" 
-              style={{backgroundColor: theme ? '#FFF' : '#e4dede'}} 
+              style={{backgroundColor: theme ? '#FFF' : '#e2e1e1'}}
+               
               placeholder='Ingresa tu nombre' />
               { touched.firstName && errors.firstName && <span className="error">{errors.firstName}</span>}
           </div>
@@ -93,7 +94,7 @@ const Form = () => {
               onChange={handleChange}
               onBlur={handleBlur}
               type="email" 
-              style={{backgroundColor: theme ? '#FFF' : '#e4dede'}} 
+              style={{backgroundColor: theme ? '#FFF' : '#e2e1e1'}} 
               placeholder='Ingresa tu email' />
               { touched.email && errors.email && <span className="error">{errors.email}</span>}
           </div>
@@ -107,7 +108,7 @@ const Form = () => {
               type='text' 
               cols="10" 
               rows="7" 
-              style={{backgroundColor: theme ? '#FFF' : '#e4dede'}} 
+              style={{backgroundColor: theme ? '#FFF' : '#e2e1e1'}} 
               placeholder='Ingresa tu mensaje'>
             </textarea>
               { touched.message && errors.message && <span className="error">{errors.message}</span>}

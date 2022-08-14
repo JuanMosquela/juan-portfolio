@@ -13,19 +13,23 @@
 }
 
 .input-group{
-    min-height: 100px;    
+    min-height: 120px;    
     
   
 }
 
 
+
+
 .input-group label{
     font-size: 1.6rem;
+    
 }
 
 .input-group input, textarea{
     width: 100%;
     border-radius: 7px;
+    margin: 5px 0;
     padding: 1.5rem 1rem;            
     border: none;
     outline: none;  
@@ -37,6 +41,8 @@
 
 textarea{
     margin-bottom: 2rem;
+    
+    
 }
 
 .error{
@@ -66,9 +72,7 @@ textarea{
     cursor: pointer;
 }
 
-@media (max-width:600px){
-
-    
+@media (max-width:600px){   
     
 
     .form-container button{

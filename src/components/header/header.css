@@ -47,15 +47,11 @@
 
 
 
-.header-container ul a:hover{
-    color: #4f4fe2;
-    
-
-}
 
 
 
-.header-container ul a:hover{
+
+.header-container ul li:hover{
     color: #4f4fe2;
 }
 
