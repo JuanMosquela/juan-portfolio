@@ -1,17 +1,23 @@
 import { useState } from "react"
-import { createContext } from "react"
-
+import { createContext } from "react";
 
 export const ThemeContext = createContext()
 
 const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState(false)
+    const [theme, setTheme] = useState(() => {
+      try{
+        const themeLocalStorage = localStorage.getItem('theme')
+        return themeLocalStorage ? JSON.parse(themeLocalStorage) : false
+      }
+      catch{
+        return false
+      }
+    })
 
     const handleTheme = (state) => {
-
-        setTheme(state)
+      setTheme(state)
+      localStorage.setItem('theme', JSON.stringify(state))
     }
-
 
 
   return (
