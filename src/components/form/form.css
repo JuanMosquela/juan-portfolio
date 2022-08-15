@@ -48,7 +48,8 @@ textarea{
 .error{
     color: rgb(250, 67, 67);
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 500;
+    
 }
 
 .success{

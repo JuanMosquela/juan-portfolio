@@ -5,14 +5,9 @@ import * as yup from 'yup';
 import emailjs, {send} from 'emailjs-com'
 import './form.css'
 import Title from "../title/Title";
+import toast, { Toaster } from 'react-hot-toast';
 
-const Form = () => { 
-
-  const [loading, setLoading] = useState(false)
-
-  const [form, setForm] = useState(false)
-
-   
+const Form = () => {   
 
   const { theme} = useContext(ThemeContext)
 
@@ -24,27 +19,30 @@ const Form = () => {
   })
 
     const SendEmail = (object) => {
-      console.log(object)
-      setLoading(true)
       
-      emailjs.send("service_ijebytp", "template_sr0vrs4", object,"uOFt-AsEDNOS6pJPk" )
+      
+      let promise = emailjs.send("service_ijebytp", "template_sr0vrs4", object,"uOFt-AsEDNOS6pJPk" )
       
           .then((result) => {
-            setTimeout(() => {
+            setTimeout(() => {             
               
-              setLoading(false)
-              resetForm()
-              setForm(true)
-              setInterval(() => {
-                setForm(false)
-                
-              }, 3000);
-              
+              resetForm()             
               
             }, 1000);
           }, (error) => {
               console.log(error.text)
           })
+          toast.promise(promise, {
+            loading: 'Enviando',
+            success:'Mensaje enviado',
+            error: 'Error'
+          },
+          {
+            style:{              
+              backgroundColor:'#FFF',
+              padding:'10px 15px' }
+            }
+          )
   }
   
 
@@ -54,8 +52,7 @@ const Form = () => {
       email:'',
       message:''
     },
-    onSubmit: (values) => {
-      setLoading(true)
+    onSubmit: (values) => {      
       SendEmail(values)     
        
     },    
@@ -116,7 +113,33 @@ const Form = () => {
           <button type="submit">Enviar</button>
           
         </form>
-        {form ? <span className="success">Mensaje enviado exitosamente</span> : null}
+        
+
+        <Toaster
+          position="top-right"
+          reverseOrder={false}
+          gutter={8}
+          containerClassName=""
+          containerStyle={{}}
+          toastOptions={{
+            // Define default options
+            className: '',
+            duration: 5000,
+            style: {
+              background: '#f5f5f5',
+              color: '#333',
+            },
+
+            // Default options for specific types
+            success: {
+              duration: 3000,
+              theme: {
+                primary: 'green',
+                secondary: 'black',
+              },
+            },
+          }}
+        />
         
 
           
