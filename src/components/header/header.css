@@ -11,6 +11,7 @@
     padding: 1.4rem;       
     z-index: 1000;
     
+    
 }
 
 .header-wrapper{
@@ -41,22 +42,6 @@
     
 }
 
-
-
-
-
-
-
-
-
-
-
-.header-container ul li:hover{
-    color: #4f4fe2;
-}
-
-
-
 .logo{
     font-family: 'Poppins';
     text-transform: uppercase;
@@ -83,10 +68,7 @@
     
 }
 
-.lat-navbar{
-    display: none;
-    
-}
+
 
 .lat-menu{
     display: none;
@@ -114,11 +96,12 @@
    
 
     .lat-navbar{
-        display: none;
+        transition: 0.4s;
+        transform: translateX(100%);
         font-family: 'Poppins';
         position: absolute;
         top: 50px;       
-        right: -10px;
+        right: -15px;
         width: 75vw;
         height: 100vh; 
         background-image: linear-gradient(to right top, #3737c9, #4d4bd2, #605edb, #7372e4, #8585ec);              

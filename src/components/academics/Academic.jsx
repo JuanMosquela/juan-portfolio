@@ -57,8 +57,8 @@ const Academic = () => {
             </Box>
             <div className="academic-container">
                 
-                    {info.length > 0 ? info.map(el => (
-                        <div className="academic-content">
+                    {info.length > 0 ? info.map((el, index) => (
+                        <div key={el.index} className="academic-content">
                             <h3>{el.title}</h3>
                             <span>{el.duration}</span>
                             <ul>

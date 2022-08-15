@@ -32,7 +32,7 @@ const Header = () => {
                 
               </ul>                     
         </nav>
-        <div className="lat-navbar" style={{display: menu && 'block'}}>
+        <div className="lat-navbar" style={{transform: menu && 'translateX(0)'}}>
           <ul>
                 <NavLink className='nav-link' to='/'>home</NavLink>
                 <NavLink className='nav-link' to='/proyectos'>proyectos</NavLink>

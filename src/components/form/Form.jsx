@@ -40,7 +40,8 @@ const Form = () => {
           {
             style:{              
               backgroundColor:'#FFF',
-              padding:'10px 15px' }
+              padding:'5px 15px',
+              boxShadow: '1px 5px 15px rgba(0,0,0,.2)' }
             }
           )
   }
@@ -116,7 +117,7 @@ const Form = () => {
         
 
         <Toaster
-          position="bottom-center"
+          position="top-center"
           reverseOrder={false}
           gutter={8}
           containerClassName=""
