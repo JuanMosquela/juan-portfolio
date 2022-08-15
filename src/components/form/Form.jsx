@@ -33,7 +33,7 @@ const Form = () => {
               console.log(error.text)
           })
           toast.promise(promise, {
-            loading: 'Enviando',
+            loading: 'Enviando...',
             success:'Mensaje enviado',
             error: 'Error'
           },
@@ -116,7 +116,7 @@ const Form = () => {
         
 
         <Toaster
-          position="top-right"
+          position="bottom-center"
           reverseOrder={false}
           gutter={8}
           containerClassName=""
@@ -128,6 +128,8 @@ const Form = () => {
             style: {
               background: '#f5f5f5',
               color: '#333',
+              fontSize:'1.8rem',
+              minWidth:'200px'
             },
 
             // Default options for specific types
