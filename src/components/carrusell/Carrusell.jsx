@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Title from '../title/Title';
 import './carrusell.css';
 import proyectsData from '../../data/proyectsData.js'
@@ -7,9 +7,13 @@ import Slider from "react-slick";
 import {Link} from 'react-router-dom'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { ThemeContext } from "../../context/ThemeProvider";
+
 
 
 const ProyectsCarrusell = () => {
+
+  const {theme} = useContext(ThemeContext)
 
   
   
@@ -55,7 +59,7 @@ const ProyectsCarrusell = () => {
     
 
     return (
-      <section id="proyects" className="container-proyects" >
+      <section id="proyects" className="container-proyects" style={{ backgroundColor: theme ? '#232533' : '#FFF' }}  >
         <Title
           className='heading'
           title='Portfolio :'

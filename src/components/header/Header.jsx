@@ -1,5 +1,5 @@
 import './header.css'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { useContext } from 'react'
 import { ThemeContext } from '../../context/ThemeProvider'
 import {FaMoon, FaSun} from 'react-icons/fa'
@@ -13,19 +13,26 @@ import {AiOutlineClose} from 'react-icons/ai'
 
 const Header = () => {  
 
+  const navigate = useNavigate()
+
   const { theme, handleTheme } = useContext(ThemeContext)
 
   const [menu, setMenu] = useState(false)
 
+  const handleNavigate = (link ) => {
+    navigate(link)
+    setMenu(false)
+  }
+
  
   return (
-    <header className="header-container" style={{backgroundColor: theme ? '#000' : '#FFF'}}> 
+    <header className="header-container" style={{backgroundColor: theme ? '#232533' : '#FFF'}}> 
 
       <div className='header-wrapper'>
         <Link to='/'><div className="logo" style={{color: theme ? '#FFF' : '#000'}}>mosquella</div> </Link>    
         
         <nav className="navbar" >            
-              <ul style={{ backgroundColor: theme ? '#000' : '#FFF' }} >
+              <ul >
                 <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/'>home</NavLink>
                 <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/proyectos'>proyectos</NavLink>
                 <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/contacto'>contacto</NavLink>              
@@ -34,9 +41,9 @@ const Header = () => {
         </nav>
         <div className="lat-navbar" style={{transform: menu && 'translateX(0)'}}>
           <ul>
-                <NavLink className='nav-link' to='/'>home</NavLink>
-                <NavLink className='nav-link' to='/proyectos'>proyectos</NavLink>
-                <NavLink className='nav-link' to='/contacto'>contacto</NavLink>              
+                <li className='nav-link' onClick={() => handleNavigate('/')} >Home</li>
+                <li className='nav-link' onClick={() => handleNavigate('/proyectos')} >proyectos</li>
+                <li className='nav-link' onClick={() => handleNavigate('/contacto')} >contacto</li>              
                   
           </ul> 
 

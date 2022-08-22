@@ -19,21 +19,20 @@ const Hero = () => {
 
 
   return (
-    <section className='hero-container'>
+    <section className='hero-container' style={{ backgroundColor: theme ? '#232533' : '#FFF' }}>
         <div className="content">
             <span>Hola, soy:</span>
             <h1>Juan Manuel Mosquella</h1>
-            <span style={{ display:'block', fontSize:'3rem', marginBottom:'3rem', height:'50px' }}>
+            <span className='text'>
               {text}              
                 
             </span>
-            <a href={JuanMosquellaCV} download="Mosquella-CV.pdf">Descargar CV</a>
-            <Link to='/contacto'>Contactame</Link>
+            <div className="button-group">
+              <a href={JuanMosquellaCV} download="Mosquella-CV.pdf">Descargar CV</a>
+              <Link to='/contacto'>Contactame</Link>
+            </div>
         </div>
-        <img src={coding} alt="" />
-        
-
-        
+        <img src={coding} alt="" />       
 
     </section>
   )

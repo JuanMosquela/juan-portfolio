@@ -4,6 +4,11 @@ import cart from '../img/cart.png';
 import commerce from '../img/e-commerce.png';
 import lawyer from '../img/lawyer.png';
 import trainer from '../img/fit-trainer.png';
+import {IoLogoJavascript} from 'react-icons/io'
+import {DiHtml5, DiCss3, DiGit, DiJavascript} from 'react-icons/di'
+import {FaReact, FaBootstrap, FaSass} from 'react-icons/fa'
+import {AiFillGithub} from 'react-icons/ai'
+import {SiMaterialui, SiFirebase} from 'react-icons/si'
 
 
 export const academicInfo = [
@@ -27,7 +32,7 @@ export const academicInfo = [
     {
         title: 'react',
         duration:'Junio 2022 - Julio 2022',
-        description: ['Renderizado condicional', 'Manejo y control del estado de la aplicacion', 'Context api', 'Creacion de SPA a traves de React Router', 'Librerias como Material UI y Formik'],
+        description: ['Renderizado condicional', 'Manejo y control del estado de la aplicacion', 'Context api, UseReducer, Hooks personalizados', 'Creacion de SPA a traves de React Router', 'Librerias como Material UI y Formik', 'Integracion con base de datos como Firebase'],
         certificate: 'https://www.coderhouse.com/certificados/62e1b706e2776700198e730f'
        
         
@@ -42,7 +47,7 @@ const proyectsData = [
         title: 'Rick & Morty: Memo',
         description: 'Juego de memoria creado con JavaScript, HTML y CSS, consumiendo una api externa. El juego consiste en buscar los pares de cada personaje sin perder todas tus vidas en el proceso. El juego esta programado para que cada vez que el usuario incie una nueva partida los personajes cambien de lugar aleatoriamente',
         img_URL: memo,
-        technologies: ['javascript','css', 'html' ],
+        technologies: [<DiJavascript />, <DiCss3 /> , <DiHtml5 /> ],
         link:{
             github: 'https://github.com/JuanMosquela/Rick-MortyMemo',
             deploy:'https://juanmosquela.github.io/Rick-MortyMemo/'
@@ -53,7 +58,7 @@ const proyectsData = [
         title: 'Physical Point',
         description: 'Diseño y desarrollo de pagina web hecha con HTML, CSS & SCSS y Javascript. Proyecto final del curso de Desarrollo Web de Coderhouse en el que se maqueto diferentes secciones de una pagina con tematica a eleccion ',
         img_URL: physical,
-        technologies: ['javascript','html', 'css', 'sass' ],
+        technologies: [<DiJavascript />, <DiCss3 /> , <DiHtml5 />, <FaSass /> ],
         link:{
             github: 'https://github.com/JuanMosquela/PhysicalPoint.github.io',
             deploy:'https://juanmosquela.github.io/PhysicalPoint.github.io/'
@@ -65,7 +70,7 @@ const proyectsData = [
         title: 'Carrito de Compra',
         description: 'Logica de carrito con Javascript, peticion de datos y almacenamiento en LocalStorage. En este proyecto se simula el proceso de compra de un e-commerce, cuenta con peticiones asincronas, cuenta con funciones de modificacion, borrado y agregado de productos',
         img_URL: cart,
-        technologies: ['javascript', 'bootstrap','html'],
+        technologies: [<DiJavascript />, <DiCss3 /> , <DiHtml5 />, <FaBootstrap /> ],
         link:{
             github: 'https://github.com/JuanMosquela/ShoppingCart',
             deploy:'https://juanmosquela.github.io/ShoppingCart/'
@@ -76,7 +81,7 @@ const proyectsData = [
         title:'Fit-Commerce',
         description: 'Juego de memoria creado con JavaScript, HTML y CSS, consumiendo una api externa.',
         img_URL: commerce,
-        technologies: ['React JS','Javascript','Material UI', 'Firebase', 'Formik', 'CSS', 'HTML' ],
+        technologies: [ <FaReact />, <SiMaterialui />, <SiFirebase />,  <DiJavascript />, <DiCss3 /> , <DiHtml5 />],
         link:{
             github: 'https://github.com/JuanMosquela/fit-commerce-Mosquella',
             deploy:'https://fit-commerce-mosquella.vercel.app/'
@@ -98,12 +103,25 @@ const proyectsData = [
         title: 'Viviana Stoppiello Abogada',
         description: 'Logica de carrito con Javascript, peticion de datos y almacenamiento en LocalStorage ',
         img_URL: lawyer,
-        technologies: ['Javascript', 'Bootstrap','CSS', 'HTML' ],
+        technologies: [<DiJavascript />, <DiCss3 /> , <DiHtml5 />  ],
         link:{
             github: 'https://github.com/JuanMosquela/Landing-page-abogada',
             deploy:'https://juanmosquela.github.io/Landing-page-abogada/'
         }
     }
 ]
+
+export  const icons = [
+    <DiHtml5 className="html" />,
+    <DiCss3 />, 
+    <IoLogoJavascript />, 
+    <FaReact />, 
+    <FaBootstrap />,
+    <FaSass />,
+    <DiGit />, 
+    <AiFillGithub />, 
+    <SiMaterialui />,
+    <SiFirebase />
+  ]
 
 export default proyectsData

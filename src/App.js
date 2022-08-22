@@ -16,7 +16,7 @@ function App() {
 
   return (
     
-    <div className="App" style={{ backgroundColor: theme ? '#000' : '#FFF', color: theme ? '#FFF' : '#000' }}>
+    <div className="App" style={{ backgroundColor: theme ? '#323445' : '#FFF', color: theme ? '#FFF' : '#000' }}>
       <Header  />
       <div>
         <Outlet />

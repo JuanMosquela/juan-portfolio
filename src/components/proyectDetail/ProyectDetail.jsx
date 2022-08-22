@@ -40,13 +40,20 @@ const ProyectDetail = () => {
             <img src={proyect.img_URL} alt="" />
             <div className="proyect-info">
                 <h3>{proyect.title}</h3>
+                
                 <div className="category-container">
+                    
+                    
+                    
+                    
                     {
                         proyect.technologies?.map(tec => (
+                            
                             <span style={{ 
-                                border: theme ? '2px solid #FFF' : '2px solid #333',
-                                color: theme ? '#FFF' : '#333' }}
+                                                                
+                                color: theme ? '#FFF' : '#234555' }}
                                 key={tec}>{tec}
+                                
                             </span>
                         ))
                     }

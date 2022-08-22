@@ -1,9 +1,9 @@
 .academic{
-    min-height: 80vh;
+    min-height: 70vh;
     
 }
 .container-buttons{
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .container-buttons button:hover{
@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     
 }
 
@@ -57,12 +58,17 @@
     text-align: left;  
      
     grid-template-columns: 1fr 1fr;
-    margin: 3rem auto;
+    margin: 5rem auto;
     
 }
 
+
+
 .academic-content a{
     font-size: 1.8rem;  
+    
+    padding: .5rem 1.5rem;
+    
      
 }
 

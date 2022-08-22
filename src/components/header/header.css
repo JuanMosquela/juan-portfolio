@@ -1,11 +1,10 @@
 .header-container{
     display: flex;
     position: fixed;
-    height: 70px;
+    height: 60px;
     width:100%;   
     box-shadow: 1px 5px 30px 5px rgba(0, 0, 0, .1);    
-    justify-content: space-around;
-    background-color: aqua;
+       
     align-items: center;   
     gap: 5rem;
     padding: 1.4rem;       
@@ -17,7 +16,8 @@
 .header-wrapper{
     position: relative;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    padding: 0 10%;    
     width: 100%;
     align-items: center;
 }
@@ -92,6 +92,12 @@
 
     .header-container{
         height: 60px;
+        
+    }
+    .header-wrapper{
+        justify-content: space-between;
+        padding: 0;
+        
     }
 
     .navbar{
@@ -100,6 +106,7 @@
    
 
     .lat-navbar{
+        display: block;
         transition: 0.4s;
         transform: translateX(100%);
         font-family: 'Poppins';
@@ -109,12 +116,12 @@
         width: 75vw;
         height: 100vh; 
         background-image: linear-gradient(to right top, #3737c9, #4d4bd2, #605edb, #7372e4, #8585ec);              
-        box-shadow: 1px 5px 15px rgba(0, 0, 0, .2);  
+        box-shadow: 1px 5px 15px rgba(0, 0, 0, .2); 
+        color: #FFF; 
     }
 
     .lat-navbar ul{
-        display: flex;
-        
+        display: flex;        
         justify-content: space-evenly;
         flex-direction: column;       
         height: 70%;
@@ -132,7 +139,8 @@
     }
 
     .lat-menu{
-        display: block;       
+        display: block;    
+        
         
     }
 }

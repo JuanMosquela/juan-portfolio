@@ -27,19 +27,15 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    align-items: center;    
     gap: 1rem;
+    font-size: 4rem;
 }
 
-.proyect-detail-container .proyect-info span{    
-    color: #333;
-    
-    border: 2px solid #333;
-    padding: 5px 15px ;
-    
-}
+
 
 .proyect-detail-container .proyect-info p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 2rem 0;
     line-height: 2rem;
 }
@@ -47,7 +43,7 @@
 .proyect-detail-container .proyect-info a{
     font-size: 1.4rem;
     padding: .5rem 3rem;
-    background-color: #333;
+    background-color: #4f4fe2;
     color: #FFF;
     cursor: pointer;
     margin-right: 15px;
@@ -64,6 +60,10 @@
 
     .proyect-detail-container{
         flex-direction: column;
+    }
+
+    .proyect-detail-container .category-container span{
+        font-size: 3rem;
     }
     
 }
