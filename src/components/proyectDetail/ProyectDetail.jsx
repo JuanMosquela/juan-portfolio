@@ -49,9 +49,9 @@ const ProyectDetail = () => {
                     {
                         proyect.technologies?.map(tec => (
                             
-                            <span style={{ 
+                            <span 
                                                                 
-                                color: theme ? '#FFF' : '#234555' }}
+                                
                                 key={tec}>{tec}
                                 
                             </span>

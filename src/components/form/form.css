@@ -68,18 +68,14 @@ textarea{
     outline: none;
     border: none;
     border-radius: 5px;
-    background-color: #4f4fe2;
-    
+    background-color: #4f4fe2;    
     cursor: pointer;
 }
 
 @media (max-width:600px){   
-    
 
     .form-container button{
         width: 100%;
-    }
-
-    
+    }   
     
 }

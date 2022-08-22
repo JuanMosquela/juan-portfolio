@@ -17,16 +17,16 @@ const About = () => {
   const { theme } = useContext(ThemeContext)
 
   const icons = [
-    <DiHtml5 className="html" />,
-    <DiCss3 />, 
-    <IoLogoJavascript />, 
-    <FaReact />, 
-    <FaBootstrap />,
-    <FaSass />,
-    <DiGit />, 
-    <AiFillGithub />, 
-    <SiMaterialui />,
-    <SiFirebase />
+    <DiHtml5 style={{ color:'#F16528' }} />,
+    <DiCss3 style={{ color:'#3399FF' }} />, 
+    <IoLogoJavascript style={{ color:'#F2D90B' }} />, 
+    <FaReact style={{ color:'#61DBFB' }} />, 
+    <FaBootstrap style={{ color:'#5D3C7F' }} />,
+    <FaSass style={{ color:'#C46293' }} />,
+    <DiGit style={{ color:'#F05030' }} />, 
+    <AiFillGithub style={{ color:'#000' }} />, 
+    <SiMaterialui style={{ color:'#00B0FF' }} />,
+    <SiFirebase style={{ color:'#EFBB5D' }} />
   ]
 
   

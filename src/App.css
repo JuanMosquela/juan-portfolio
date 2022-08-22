@@ -54,6 +54,8 @@ p{
 
 
 :root{
+    --dark-color-body: #232533;
+    --dark-color-section: #323445;
     --body-color:#1E1F21;
     --background-color:#27282D;
     --background-color-light:#323336;
@@ -64,7 +66,7 @@ p{
         #ffffff -278.56%,
         #6d6d6d -78.47%,
         #11101d 91.61%
-      );
+    );
 }
 
 button, i{
