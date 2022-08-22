@@ -41,11 +41,7 @@ const ProyectDetail = () => {
             <div className="proyect-info">
                 <h3>{proyect.title}</h3>
                 
-                <div className="category-container">
-                    
-                    
-                    
-                    
+                <div className="category-container">                   
                     {
                         proyect.technologies?.map(tec => (
                             

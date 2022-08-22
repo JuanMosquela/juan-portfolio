@@ -96,8 +96,8 @@ const proyectsData = [
         img_URL: commerce,
         technologies: [ <FaReact />, <SiMaterialui />, <SiFirebase />,  <DiJavascript />, <DiCss3 /> , <DiHtml5 />, <DiGit />, <AiFillGithub />],
         link:{
-            github: 'https://github.com/JuanMosquela/fit-commerce-Mosquella',
-            deploy:'https://fit-commerce-mosquella.vercel.app/'
+            github: 'https://github.com/JuanMosquela/e-commerce-fit',
+            deploy:'https://e-commerce-fit.vercel.app/'
         }
     },
     {
