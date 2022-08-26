@@ -19,7 +19,7 @@ const Hero = () => {
 
 
   return (
-    <section className='hero-container' style={{ backgroundColor: theme ? '#232533' : '#e4e4e4' }}>
+    <section className='hero-container' style={{ backgroundColor: theme ? '#232533' : '#FFF' }}>
         <div className="content">
             <span>Hola, soy:</span>
             <h1>Juan Manuel Mosquella</h1>

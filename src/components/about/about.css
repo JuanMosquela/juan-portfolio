@@ -1,8 +1,11 @@
+
+
 .about-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;    
+    min-height: 70vh;  
+      
 }
 
 .about-container .picture-profile{    
@@ -20,7 +23,7 @@
 }
 
 .skills-container{
-    min-height: 60vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
