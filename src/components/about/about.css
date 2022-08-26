@@ -1,21 +1,16 @@
 .about-container{
-    display: flex;    
+    display: flex;
+    justify-content: center;
     align-items: center;
-    
+    min-height: 80vh;    
 }
 
 .about-container .picture-profile{    
-    flex: 1 1 30rem;    
+    flex: 1 1 30rem;   
     
 }
-
-
-
-.about-container  img{
-   
-    width: 500px;
-    
-    
+.about-container  img{   
+    width: 500px; 
     
 }
 
@@ -24,9 +19,17 @@
     text-align: justify;
 }
 
-.animation-wrapper{    
+.skills-container{
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-    max-width: 500px;
+.animation-wrapper{   
+
+    
     overflow: hidden;
     
 }
@@ -40,8 +43,8 @@
     padding: 5px 0;
 }
 
-.icons-container i{
-    font-size: 4.5rem;
+.icons-container img{
+    width: 100px;
     transition: .3s linear; 
     
 }

@@ -5,12 +5,18 @@ import commerce from '../img/e-commerce.png';
 import lawyer from '../img/lawyer.png';
 import aixa from '../img/aixa.png'
 import trainer from '../img/fit-trainer.png';
-import {IoLogoJavascript} from 'react-icons/io'
-
-import {DiHtml5, DiCss3, DiGit, DiJavascript} from 'react-icons/di'
-import {FaReact, FaBootstrap, FaSass} from 'react-icons/fa'
-import {AiFillGithub} from 'react-icons/ai'
-import {SiMaterialui, SiFirebase} from 'react-icons/si'
+import html from '../img/html.png'
+import css from '../img/css.png'
+import git from '../img/git.png'
+import javascript from '../img/javascript.png'
+import react from '../img/react.png'
+import node from '../img/node.png'
+import redux from '../img/redux.png'
+import mu5 from '../img/mu5.png'
+import sass from '../img/sass.png'
+import typescript from '../img/typescript.png'
+import next from '../img/next.png'
+import bootstrap from '../img/bootstrap.png'
 
 
 export const academicInfo = [
@@ -49,7 +55,7 @@ const proyectsData = [
         title: 'Rick & Morty: Memo',
         description: 'Juego de memoria creado con JavaScript, HTML y CSS, consumiendo una api externa. El juego consiste en buscar los pares de cada personaje sin perder todas tus vidas en el proceso. El juego esta programado para que cada vez que el usuario incie una nueva partida los personajes cambien de lugar aleatoriamente',
         img_URL: memo,
-        technologies: [<DiJavascript />, <DiCss3 /> , <DiHtml5 />, <DiGit />, <AiFillGithub />],
+        technologies: [javascript, css , html, git],
         link:{
             github: 'https://github.com/JuanMosquela/Rick-MortyMemo',
             deploy:'https://juanmosquela.github.io/Rick-MortyMemo/'
@@ -60,7 +66,7 @@ const proyectsData = [
         title: 'Physical Point',
         description: 'Diseño y desarrollo de pagina web hecha con HTML, CSS & SCSS y Javascript. Proyecto final del curso de Desarrollo Web de Coderhouse en el que se maqueto diferentes secciones de una pagina con tematica a eleccion ',
         img_URL: physical,
-        technologies: [<DiJavascript />, <DiCss3 /> , <DiHtml5 />, <FaSass />, <DiGit />, <AiFillGithub />],
+        technologies: [javascript, css , html, git, sass],
         link:{
             github: 'https://github.com/JuanMosquela/PhysicalPoint.github.io',
             deploy:'https://juanmosquela.github.io/PhysicalPoint.github.io/'
@@ -72,7 +78,7 @@ const proyectsData = [
         title: 'Aixa Frazoni',
         description: 'Proyecto de Coderhouse para una clienta real como beneficio por haber ingresado en el top 10 de sus cursos. En este proyecto trabaje a la par de dos diseñadores UX/UI y en conjunto con otro desarrollador, donde nos apalancamos de Git para el control de versiones',
         img_URL: aixa,
-        technologies: [ <FaReact />, <DiJavascript />, <DiCss3 /> , <DiHtml5 />, <DiGit />, <AiFillGithub />  ],
+        technologies: [ react, javascript, css , html, git  ],
         link:{
             github: 'https://github.com/JuanMosquela/Landing-page-abogada',
             deploy:'https://juanmosquela.github.io/Landing-page-abogada/'
@@ -83,7 +89,7 @@ const proyectsData = [
         title: 'Carrito de Compra',
         description: 'Logica de carrito con Javascript, peticion de datos y almacenamiento en LocalStorage. En este proyecto se simula el proceso de compra de un e-commerce, cuenta con peticiones asincronas, cuenta con funciones de modificacion, borrado y agregado de productos',
         img_URL: cart,
-        technologies: [<DiJavascript />, <DiCss3 /> , <DiHtml5 />, <FaBootstrap />, <DiGit />, <AiFillGithub /> ],
+        technologies: [javascript, css , html, git, bootstrap ],
         link:{
             github: 'https://github.com/JuanMosquela/ShoppingCart',
             deploy:'https://juanmosquela.github.io/ShoppingCart/'
@@ -94,7 +100,7 @@ const proyectsData = [
         title:'Fit-Commerce',
         description: 'Juego de memoria creado con JavaScript, HTML y CSS, consumiendo una api externa.',
         img_URL: commerce,
-        technologies: [ <FaReact />, <SiMaterialui />, <SiFirebase />,  <DiJavascript />, <DiCss3 /> , <DiHtml5 />, <DiGit />, <AiFillGithub />],
+        technologies: [ react, mu5,  javascript, css , html, git],
         link:{
             github: 'https://github.com/JuanMosquela/e-commerce-fit',
             deploy:'https://e-commerce-fit.vercel.app/'
@@ -105,7 +111,7 @@ const proyectsData = [
         title: 'Chinito Fit',
         description: 'Diseño y desarrollo de pagina web hecha con HTML, CSS & SCSS y Javascript.',
         img_URL: trainer,
-        technologies: [<DiJavascript />, <FaSass />, <DiHtml5 />, <DiGit />, <AiFillGithub /> ],
+        technologies: [ javascript, html, sass, git ],
         link:{
             github: 'https://github.com/JuanMosquela/Chinito.github.io',
             deploy:'https://juanmosquela.github.io/Chinito.github.io/'

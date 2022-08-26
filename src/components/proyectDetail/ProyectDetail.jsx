@@ -45,12 +45,7 @@ const ProyectDetail = () => {
                     {
                         proyect.technologies?.map(tec => (
                             
-                            <span 
-                                                                
-                                
-                                key={tec}>{tec}
-                                
-                            </span>
+                            <img src={tec} alt="" />
                         ))
                     }
                 </div>
