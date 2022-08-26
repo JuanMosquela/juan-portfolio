@@ -67,8 +67,9 @@
         flex-direction: column;
     }
 
-    .proyect-detail-container .category-container span{
-        font-size: 3rem;
+    .proyect-detail-container .category-container img{
+        width: 50px;
+        height: 50px;
     }
     
 }
