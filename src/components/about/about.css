@@ -41,12 +41,28 @@
     padding: 5px 0;
 }
 
-.icons-container img {
-    width: 100px;
-    transition: .3s linear;
 
+.tec{
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s;
 }
 
+
+
+.icons-container img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    
+
+}
 
 
 .icons-container i:hover {

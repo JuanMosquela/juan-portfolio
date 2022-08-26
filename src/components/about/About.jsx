@@ -1,11 +1,5 @@
 import Title from "../title/Title"
 import './about.css';
-
-import {IoLogoJavascript} from 'react-icons/io'
-import {DiHtml5, DiCss3, DiGit} from 'react-icons/di'
-import {FaReact, FaBootstrap, FaSass} from 'react-icons/fa'
-import {AiFillGithub} from 'react-icons/ai'
-import {SiMaterialui, SiFirebase} from 'react-icons/si'
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeProvider";
 import academic from '../../img/academic.svg'
@@ -31,18 +25,52 @@ const About = () => {
   const { theme } = useContext(ThemeContext)
 
   const icons = [
-    html,
-    css,
-    javascript,
-    react,
-    redux,
-    next,
-    typescript,
-    git,
-    sass,    
-    bootstrap,
-    mu5,
-    node
+    {
+      title: 'html',
+      image: html
+    },
+    {
+      title: 'css',
+      image: css
+    },
+    {
+      title: 'javascript',
+      image: javascript
+    },
+    {
+      title: 'react',
+      image: react
+    },
+    {
+      title: 'redux',
+      image: redux
+    },
+    {
+      title: 'next',
+      image: next
+    },
+    {
+      title: 'typescript',
+      image: typescript
+    },
+    {
+      title: 'git',
+      image: git
+    },
+    {
+      title: 'sass',
+      image: sass
+    },
+    {
+      title: 'bootstrap',
+      image: bootstrap
+    },
+    {
+      title: 'node',
+      image: node
+    },
+    
+    
     
   ]
 
@@ -65,8 +93,11 @@ const About = () => {
                 <div className="animation-wrapper">
                 <div className="icons-container">
                   {
-                    icons?.map((icon, index) => (                      
-                      <img src={icon} key={index} alt="" />                   
+                    icons?.map((tec, index) => (                      
+                      <div className="tec" style={{backgroundColor: theme ? '#232533' : '#e4e4e4'}}>
+                        <img src={tec.image} key={index} alt="" /> 
+                        <h4>{tec.title}</h4> 
+                      </div>                 
                     ))
                   }
                 </div>
