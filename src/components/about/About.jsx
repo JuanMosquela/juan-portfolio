@@ -26,47 +26,47 @@ const About = () => {
 
   const icons = [
     {
-      title: 'html',
+      title: 'HTML',
       image: html
     },
     {
-      title: 'css',
+      title: 'CSS',
       image: css
     },
     {
-      title: 'javascript',
+      title: 'Javascript',
       image: javascript
     },
     {
-      title: 'react',
+      title: 'React JS',
       image: react
     },
     {
-      title: 'redux',
+      title: 'Redux',
       image: redux
     },
     {
-      title: 'next',
+      title: 'Next JS',
       image: next
     },
     {
-      title: 'typescript',
+      title: 'Typescript',
       image: typescript
     },
     {
-      title: 'git',
+      title: 'Git',
       image: git
     },
     {
-      title: 'sass',
+      title: 'Sass',
       image: sass
     },
     {
-      title: 'bootstrap',
+      title: 'Bootstrap',
       image: bootstrap
     },
     {
-      title: 'node',
+      title: 'Node JS',
       image: node
     },
     
