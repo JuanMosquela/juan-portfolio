@@ -37,7 +37,7 @@ const ProyectDetail = () => {
   return (
     <div>
         <section className="proyect-detail-container">
-            <img src={proyect.img_URL} alt="" />
+            <img className="proyect-img" src={proyect.img_URL} alt="" />
             <div className="proyect-info">
                 <h3>{proyect.title}</h3>
                 

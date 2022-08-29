@@ -80,8 +80,8 @@ const proyectsData = [
         img_URL: aixa,
         technologies: [ react, javascript, css , html, git  ],
         link:{
-            github: 'https://github.com/JuanMosquela/Landing-page-abogada',
-            deploy:'https://juanmosquela.github.io/Landing-page-abogada/'
+            github: 'https://github.com/JuanMosquela/proyecto-aixa',
+            deploy:'https://proyecto-aixa.vercel.app/'
         }
     },
     {

@@ -10,6 +10,7 @@
     height: 400px;
     object-fit: cover;
     border-radius: 12px;
+    
 }
 
 .proyect-detail-container .proyect-info{
@@ -67,9 +68,10 @@
         flex-direction: column;
     }
 
-    .proyect-detail-container img{
+    .proyect-detail-container .proyect-img{
         width: 80%;
         height: 200px;
+        margin-top: 70px;
         
     }
 
