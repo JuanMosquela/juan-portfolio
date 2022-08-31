@@ -2,9 +2,8 @@ import memo from '../img/memo.png';
 import physical from '../img/physical.png';
 import cart from '../img/cart.png';
 import commerce from '../img/e-commerce.png';
-import lawyer from '../img/lawyer.png';
 import aixa from '../img/aixa.png'
-import trainer from '../img/fit-trainer.png';
+import youtube from '../img/youtube.png';
 import html from '../img/html.png'
 import css from '../img/css.png'
 import git from '../img/git.png'
@@ -62,28 +61,28 @@ const proyectsData = [
         }
     },
     {
-        id:2,
-        title: 'Physical Point',
-        description: 'Diseño y desarrollo de pagina web hecha con HTML, CSS & SCSS y Javascript. Proyecto final del curso de Desarrollo Web de Coderhouse en el que se maqueto diferentes secciones de una pagina con tematica a eleccion ',
-        img_URL: physical,
-        technologies: [javascript, css , html, git, sass],
+        id:5,
+        title: 'YouTube Clone',
+        description: 'Clon de Youtube en el cual, por medio de RapidAPI utilizo la api de YouTube para poder desplegar diferentes videos de acuerdo a categorias y filtros de busqueda. La UI esta hecha con Material UI.',
+        img_URL: youtube,
+        technologies: [ react,mu5,javascript, html, sass, git ],
         link:{
-            github: 'https://github.com/JuanMosquela/PhysicalPoint.github.io',
-            deploy:'https://juanmosquela.github.io/PhysicalPoint.github.io/'
-        }
-
-    },
+            github: 'https://github.com/JuanMosquela/YouTube-Clon',
+            deploy:'https://you-tube-clon.vercel.app/'
+        } 
+    },  
     {
-        id:6,
-        title: 'Aixa Frazoni',
-        description: 'Proyecto de Coderhouse para una clienta real como beneficio por haber ingresado en el top 10 de sus cursos. En este proyecto trabaje a la par de dos diseñadores UX/UI y en conjunto con otro desarrollador, donde nos apalancamos de Git para el control de versiones',
-        img_URL: aixa,
-        technologies: [ react, javascript, css , html, git  ],
+        id:4,
+        title:'Fit-Commerce',
+        description: 'Juego de memoria creado con JavaScript, HTML y CSS, consumiendo una api externa.',
+        img_URL: commerce,
+        technologies: [ react, mu5,  javascript, css , html, git],
         link:{
-            github: 'https://github.com/JuanMosquela/proyecto-aixa',
-            deploy:'https://proyecto-aixa.vercel.app/'
+            github: 'https://github.com/JuanMosquela/e-commerce-fit',
+            deploy:'https://e-commerce-fit.vercel.app/'
         }
-    },
+    },  
+    
     {
         id:3,
         title: 'Carrito de Compra',
@@ -95,28 +94,8 @@ const proyectsData = [
             deploy:'https://juanmosquela.github.io/ShoppingCart/'
         } 
     },
-    {
-        id:4,
-        title:'Fit-Commerce',
-        description: 'Juego de memoria creado con JavaScript, HTML y CSS, consumiendo una api externa.',
-        img_URL: commerce,
-        technologies: [ react, mu5,  javascript, css , html, git],
-        link:{
-            github: 'https://github.com/JuanMosquela/e-commerce-fit',
-            deploy:'https://e-commerce-fit.vercel.app/'
-        }
-    },
-    {
-        id:5,
-        title: 'Chinito Fit',
-        description: 'Diseño y desarrollo de pagina web hecha con HTML, CSS & SCSS y Javascript.',
-        img_URL: trainer,
-        technologies: [ javascript, html, sass, git ],
-        link:{
-            github: 'https://github.com/JuanMosquela/Chinito.github.io',
-            deploy:'https://juanmosquela.github.io/Chinito.github.io/'
-        } 
-    },
+    
+    
     
 ]
 

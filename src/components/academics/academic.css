@@ -39,7 +39,13 @@
 
 .academic-container ul li{
     font-size: 1.6rem;
-    list-style:disc
+    list-style:none;
+    background-color: #FFF;
+    
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    align-self: center;
 }
 
 

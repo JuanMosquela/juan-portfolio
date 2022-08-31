@@ -35,7 +35,7 @@ const Academic = () => {
 
   return (
     <section className="academic">
-        <Title title='Cerftificados :' span='cursos realizados' />
+        <Title title='Certificados' span='cursos realizados' />
         <div className="academic-wrapper">
             <Box className="container-buttons"
                 sx={{
@@ -62,7 +62,7 @@ const Academic = () => {
                             <span>{el.duration}</span>
                             <ul>
                                 {el.description.map(e => (
-                                    <li>{e}</li>
+                                    <li style={{ color: theme && '#000' }} >{e}</li>
                                 ))}
                             </ul>
                             <a href={el.certificate} target='blank' style={{ color: theme ? '#FFF' : '#000'}} >Ver certificado</a>                          

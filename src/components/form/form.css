@@ -8,7 +8,7 @@
 
 
 .form-container{    
-    width: 100%;
+    width: 80%;
        
 }
 
@@ -72,7 +72,11 @@ textarea{
     cursor: pointer;
 }
 
-@media (max-width:600px){   
+@media (max-width:600px){  
+    
+    .form-container{
+        width: 100%;
+    }
 
     .form-container button{
         width: 100%;

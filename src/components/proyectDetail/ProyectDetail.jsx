@@ -2,14 +2,12 @@ import { useContext } from "react"
 import { useState } from "react"
 import { useEffect } from "react"
 import { useParams } from "react-router-dom"
-import { ThemeContext } from "../../context/ThemeProvider"
 import proyectsData from "../../data/proyectsData"
 import './proyectDetail.css'
 
 const ProyectDetail = () => {
 
-    const {theme} = useContext(ThemeContext)
-
+    
     const [proyect, setProyect] = useState({})
 
     const { title } = useParams()

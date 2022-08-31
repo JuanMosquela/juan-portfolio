@@ -64,7 +64,7 @@ const Form = () => {
 
   return (
     <section className="contact" style={{ backgroundColor: theme ? '#232533' : '#FFF' }}>
-        <Title title='Contacto :' span='Espero tu feedback' />
+        <Title title='Contacto' span='Espero tu feedback' />
 
         <form         
           className="form-container" 

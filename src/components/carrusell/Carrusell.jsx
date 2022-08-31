@@ -62,7 +62,7 @@ const ProyectsCarrusell = () => {
       <section id="proyects" className="container-proyects" style={{ backgroundColor: theme ? '#232533' : '#FFF' }}  >
         <Title
           className='heading'
-          title='Portfolio :'
+          title='Portfolio'
           span='Conoce mi trabajo' 
         /> 
         <Slider  className="container" {...settings}> 
