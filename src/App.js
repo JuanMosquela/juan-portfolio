@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeProvider";
 import { CircleLeft, CircleRigth } from "./components/circle/Circle";
+import Footer from "./components/footer/Footer";
 
 
 
@@ -24,7 +25,8 @@ function App() {
       <div>
         <Outlet />
         
-      </div>          
+      </div>  
+      <Footer />        
       
     </div>
   );

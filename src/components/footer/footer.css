@@ -1,0 +1,9 @@
+footer{
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+     font-size: 1.6rem;
+}
+
