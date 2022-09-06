@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import { Outlet } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeProvider";
+import { CircleLeft, CircleRigth } from "./components/circle/Circle";
 
 
 
@@ -16,8 +17,10 @@ function App() {
 
   return (
     
-    <div className="App" style={{ backgroundColor: theme ? '#323445' : '#FFF', color: theme ? '#FFF' : '#000' }}>
+    <div className="App" style={{ backgroundColor: theme ? "var(--blue-dark-color)" : '#FFF', color: theme ? '#FFF' : '#000' }}>
       <Header  />
+      <CircleLeft />
+      <CircleRigth />
       <div>
         <Outlet />
         

@@ -8,14 +8,17 @@
 
 
 .form-container{    
-    width: 80%;
+    width: 60%;
        
 }
 
 .input-group{
-    min-height: 120px;    
-    
-  
+    min-height: 120px;  
+}
+
+.input-group.textarea{
+    min-height: 230px;  
+
 }
 
 
@@ -39,11 +42,6 @@
     
 }
 
-textarea{
-    margin-bottom: 2rem;
-    
-    
-}
 
 .error{
     color: rgb(250, 67, 67);
@@ -61,6 +59,7 @@ textarea{
 
 
 .form-container button{
+    width: 100%;
     font-size: 1.8rem;
     color: #FFF;
     padding: 1rem 2.5rem;
@@ -68,7 +67,7 @@ textarea{
     outline: none;
     border: none;
     border-radius: 5px;
-    background-color: #4f4fe2;    
+    background: #4f4fe2;    
     cursor: pointer;
 }
 

@@ -8,8 +8,14 @@
 }
 
 .heading span{
-    font-size: 1.5rem;
+    font-size: 3rem;
+    font-weight: 700;
     display: block;
+    background: linear-gradient(40deg,var(--aqua-color), var(--blue-color), var(--purple-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
     
     
 }
@@ -17,10 +23,9 @@
 
 
 .heading h2{
-    font-size: 3.4rem;
+    font-size: 4rem;
     font-family: 'Poppins', sans-serif;
-    display: inline;    
-   
+    display: inline;  
     font-weight: 700;
     margin-top: 1.5rem;
     

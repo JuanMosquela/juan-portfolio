@@ -54,6 +54,11 @@ p{
 
 
 :root{
+    --color-primary: #059dff;
+    --blue-dark-color: #111827;
+    --aqua-color: #71D0C0;
+    --blue-color: #3C83F6;
+    --purple-color: #8F36EA;
     --dark-color-body: #232533;
     --dark-color-section: #323445;
     --body-color:#1E1F21;
@@ -62,11 +67,11 @@ p{
     --hover-color: #2C69A6;
     --light-grey-color: #e4e4e4;
     --fs-a: 1.6rem;
-    --black-gradient: linear-gradient(
-        144.39deg,
-        #ffffff -278.56%,
-        #6d6d6d -78.47%,
-        #11101d 91.61%
+    --primary-gradient: linear-gradient(
+        95deg,
+        var(--aqua-color) 15%,
+        var(--blue-color) 45%,
+        var(--purple-color) 75%
     );
 }
 

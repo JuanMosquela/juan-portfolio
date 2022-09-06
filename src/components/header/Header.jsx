@@ -26,7 +26,7 @@ const Header = () => {
 
  
   return (
-    <header className="header-container" style={{backgroundColor: theme ? '#232533' : '#FFF'}}> 
+    <header className="header-container" style={{backgroundColor: theme ? "var(--blue-dark-color)" : '#FFF'}}> 
 
       <div className='header-wrapper'>
         <Link to='/'><div className="logo" style={{color: theme ? '#FFF' : '#000'}}>mosquella</div> </Link>    

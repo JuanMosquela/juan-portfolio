@@ -59,11 +59,11 @@ const ProyectsCarrusell = () => {
     
 
     return (
-      <section id="proyects" className="container-proyects" style={{ backgroundColor: theme ? '#232533' : '#FFF' }}  >
+      <section id="proyects" className="container-proyects" style={{ backgroundColor: theme ? "var(--blue-dark-color)" : '#FFF' }}  >
         <Title
           className='heading'
           title='Portfolio'
-          span='Conoce mi trabajo' 
+          span='conoce mi trabajo' 
         /> 
         <Slider  className="container" {...settings}> 
           {proyectsData.map(proyect => (  

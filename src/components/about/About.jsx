@@ -89,15 +89,17 @@ const About = () => {
             </div>            
           </div>
           <div className="skills-container">
-            <Title title='Mis habilidades' />              
+            <Title title='Mis habilidades' span='tecnologías que conozco' />              
                 <div className="animation-wrapper">
                 <div className="icons-container">
                   {
                     icons?.map((tec, index) => (                      
-                      <div className="tec" style={{backgroundColor: theme ? '#232533' : '#e4e4e4'}}>
-                        <img src={tec.image} key={index} alt="" /> 
+                      <div style={{ display:'flex', flexDirection:'column', alignItems:'center' }}>
+                        <figure className="tec" style={{backgroundColor: theme ? '#232533' : '#e4e4e4', marginBottom:'10px'}}>
+                        <img src={tec.image} key={index} alt={tec.name} />                        
+                        </figure>  
                         <h4>{tec.title}</h4> 
-                      </div>                 
+                      </div>               
                     ))
                   }
                 </div>

@@ -63,8 +63,8 @@ const Form = () => {
   
 
   return (
-    <section className="contact" style={{ backgroundColor: theme ? '#232533' : '#FFF' }}>
-        <Title title='Contacto' span='Espero tu feedback' />
+    <section className="contact" style={{ backgroundColor: theme ? "var(--blue-dark-color)" : '#FFF' }}>
+        <Title title='Contacto' span='¿te gusto mi trabajo?' />
 
         <form         
           className="form-container" 
@@ -96,7 +96,7 @@ const Form = () => {
               placeholder='Ingresa tu email' />
               { touched.email && errors.email && <span className="error">{errors.email}</span>}
           </div>
-          <div className="input-group">
+          <div className="input-group textarea">
             <label htmlFor="message">Mensaje:</label>              
             <textarea 
               name="message"

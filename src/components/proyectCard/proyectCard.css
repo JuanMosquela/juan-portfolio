@@ -20,3 +20,9 @@
     object-fit: cover;
     
 }
+
+@media (max-width:500){
+    .proyect-card{
+        padding: 0;
+    }
+}

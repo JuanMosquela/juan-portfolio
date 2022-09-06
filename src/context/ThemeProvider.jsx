@@ -7,10 +7,10 @@ const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState(() => {
       try{
         const themeLocalStorage = localStorage.getItem('theme')
-        return themeLocalStorage ? JSON.parse(themeLocalStorage) : false
+        return themeLocalStorage ? JSON.parse(themeLocalStorage) : true
       }
       catch{
-        return false
+        return true
       }
     })
 
