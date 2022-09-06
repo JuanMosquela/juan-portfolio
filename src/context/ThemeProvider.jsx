@@ -10,7 +10,7 @@ const ThemeProvider = ({ children }) => {
         return themeLocalStorage ? JSON.parse(themeLocalStorage) : true
       }
       catch{
-        return true
+        return true 
       }
     })
 

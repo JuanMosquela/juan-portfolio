@@ -37,6 +37,8 @@
 }
 
 
+
+
 .hero-container .content a{
     font-size: 1.8rem;
     display: inline-block;
@@ -76,8 +78,15 @@
     .hero-container .content{
         padding: 0 5px;        
         inset: 0;
-        top: 30%;        
+        top: 30%; 
+         
     }   
+
+    .hero-container .content h1{
+        font-size: 5rem;
+    }
+
+    
 
     .hero-container img{
         width: 400px;

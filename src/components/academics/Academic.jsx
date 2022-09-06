@@ -45,7 +45,9 @@ const Academic = () => {
                 display:'flex',           
                 alignItems:'center',                
                 flexWrap:'wrap',
-                p:'2rem'
+                p:'2rem 10%',
+                gap:'5rem',
+                
                 
                 
                 
@@ -53,46 +55,39 @@ const Academic = () => {
             }}
             >
             
-            <ButtonGroup
-            className="container-buttons"
-                sx={{
-                    display:'flex',
-                    flexDirection:'column',
-                    justifyContent:'center',
-                    alignItems:'center',  
-                    flex:'1rem',    
-                    
-                    gap:'1rem'
-                }}  
-                 
-                >
+            <div
+              className="container-buttons">
                 <button 
                     onClick={() => handleClick('desarrollo web')} 
                     style={{ 
-                        backgroundColor: theme ? '#000' : '#ccc',  
+                        background: theme ? 'linear-gradient(130deg, #000 92%, transparent 90%)' : 
+                        'linear-gradient(130deg, #ccc 92%, transparent 90%)',  
                         fontSize:'1.4rem', color: theme ? '#FFF' : '#000'
                          }}>Desarrollo Web <MdKeyboardArrowRight className="arrow" /> </button>                
                 <button 
                     onClick={() => handleClick('javascript')} 
                     style={{ 
-                        backgroundColor: theme ? '#000' : '#ccc',  
+                        background: theme ? 'linear-gradient(130deg, #000 92%, transparent 90%)' : 
+                        'linear-gradient(130deg, #ccc 92%, transparent 90%)',    
                         fontSize:'1.4rem', color: theme ? '#FFF' : '#000'
                          }}>Javascript <MdKeyboardArrowRight className="arrow" /></button>
                 <button 
                     onClick={() => handleClick('react')} 
                     style={{ 
-                        backgroundColor: theme ? '#000' : '#ccc',  
+                        background: theme ? 'linear-gradient(130deg, #000 92%, transparent 90%)' : 
+                        'linear-gradient(130deg, #ccc 92%, transparent 90%)',  
                         fontSize:'1.4rem', color: theme ? '#FFF' : '#000'
                          }}>React <MdKeyboardArrowRight className="arrow" /></button>
                 <button 
                     onClick={() => handleClick('node')} 
                     style={{ 
-                        backgroundColor: theme ? '#000' : '#ccc',  
+                        background: theme ? 'linear-gradient(130deg, #000 92%, transparent 90%)' : 
+                        'linear-gradient(130deg, #ccc 92%, transparent 90%)',    
                         fontSize:'1.4rem', color: theme ? '#FFF' : '#000'
                          }}>Node <MdKeyboardArrowRight className="arrow" /></button>
-            </ButtonGroup>            
+            </div>            
             
-            <Box flex={1} >               
+            <div className="academic-wrapper" >               
                 
                     {info.length > 0 ? info.map((el, index) => (
                         <div key={el.index} className="academic-content">
@@ -119,7 +114,7 @@ const Academic = () => {
                 }
                     
                 
-            </Box>
+            </div>
         </Box>
     </section>
   )

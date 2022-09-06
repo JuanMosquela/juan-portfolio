@@ -11,30 +11,51 @@
 .container-buttons{
     display: flex;
     margin-bottom: 4rem;
-    
-    
+    flex-direction: column;   
+    flex: 1;
+    gap: 1rem;   
+    width: auto; 
+    width: 600px;
     
     
 }
 
 .academic button{
     padding: 2rem;
-    width: 500px;
+    width: 100%;    
     font-weight: 600;
-    font-size: 1.4rem;
-    border-radius: 50px ;
+    font-size: 1.4rem;    
     cursor: pointer;    
     border: none;
-    display: flex;
-    
+    display: flex;    
     justify-content: space-between;
     align-items: center;    
     height: 100px;
     padding: 0 50px;
+    
 }
 
 .academic button .arrow{
     font-size: 3rem;
+    
+}
+
+.academic button:hover .arrow{
+    animation: move-right 1s ease-in infinite;
+}
+
+@keyframes move-right{
+    0%{
+
+    }
+    50%{
+
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0);
+
+    }
 }
 
 .container-buttons button:hover{
@@ -43,7 +64,7 @@
 }
 
 .container-buttons button:focus{
-    background-image: linear-gradient(to right top, #3737c9, #4d4bd2, #605edb, #7372e4, #8585ec);;
+    
     color: #FFF;
 }
 
@@ -83,10 +104,15 @@
     margin-bottom: 1rem;
 }
 
+.academic-wrapper{
+    flex: 1;
+}
+
 
 
 .academic-content{
     height: 100%;
+    
     
     
 }
@@ -136,7 +162,7 @@
 
 
 .incomplete img{
-    width: 400px;
+    width: 300px;
     
 }
 
@@ -152,6 +178,10 @@
 @media(max-width:500){
     .academic-content{
         padding: 0 20px;
+    }
+
+    .incomplete img{
+        width: 20px;
     }
 
     
