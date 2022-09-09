@@ -16,6 +16,7 @@ import sass from '../img/sass.png'
 import typescript from '../img/typescript.png'
 import next from '../img/next.png'
 import bootstrap from '../img/bootstrap.png'
+import netflix from '../img/netflix.png'
 
 
 export const academicInfo = [
@@ -62,13 +63,13 @@ const proyectsData = [
     },
     {
         id:5,
-        title: 'YouTube Clone',
-        description: 'Clon de Youtube en el cual, por medio de RapidAPI utilizo la api de YouTube para poder desplegar diferentes videos de acuerdo a categorias y filtros de busqueda. La UI esta hecha con Material UI.',
-        img_URL: youtube,
-        technologies: [ react,mu5,javascript, html, sass, git ],
+        title: 'Netflix Clone',
+        description: 'Clon deNetflix en el cual utilizo la api de tmdb para poder desplegar diferentes peliculas de acuerdo a categorias y filtros de busqueda. La UI esta hecha con Material UI.',
+        img_URL: netflix,
+        technologies: [ react,mu5,javascript, html, css, git ],
         link:{
-            github: 'https://github.com/JuanMosquela/YouTube-Clon',
-            deploy:'https://you-tube-clon.vercel.app/'
+            github: 'https://github.com/JuanMosquela/netflix-clone',
+            deploy:'https://netflix-clone-xi-tawny.vercel.app/'
         } 
     },  
     {

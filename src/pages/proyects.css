@@ -4,21 +4,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 80%;
-    margin: 0 auto; */
+    
 }
 
 .proyects-wrapper{
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(400px, 1fr));
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;    
     align-items: center;
+    
 
     
 }
 
 .proyects-wrapper figure{
-    width: 100%;
+    
+    max-width: 450px;
     height: 280px;
     object-fit: cover;
     cursor: pointer;
@@ -45,5 +46,11 @@
     }
     100%{
         transform: translateY(0%);
+    }
+}
+
+@media(max-width:800px){
+    .proyects-wrapper{
+        grid-template-columns: 1fr;
     }
 }
