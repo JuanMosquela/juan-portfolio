@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './hero.css';
-import JuanMosquellaCV from '../../img/mosquella-cv.pdf';
+import JuanMosquellaCV from '../../../mosquellaCV.pdf';
 import { useTypewriter} from 'react-simple-typewriter'
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeProvider';
@@ -26,7 +26,7 @@ const Hero = () => {
                 
             </span>
             <div className="button-group">
-              <a href={JuanMosquellaCV} download="mosquella-cv.pdf">Descargar CV</a>
+              <a href={JuanMosquellaCV} download="mosquellaCV.pdf">Descargar CV</a>
               <Link to='/contacto'>Contactame</Link>
             </div>
         </div>
