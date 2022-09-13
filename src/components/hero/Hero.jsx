@@ -16,8 +16,6 @@ const Hero = () => {
     
   })
 
-
-
   return (
     <section className='hero-container' >
         <div className="content">
@@ -28,7 +26,7 @@ const Hero = () => {
                 
             </span>
             <div className="button-group">
-              <a href={JuanMosquellaCV} download="Mosquella-CV.pdf">Descargar CV</a>
+              <a href={JuanMosquellaCV} download="mosquella-cv.pdf">Descargar CV</a>
               <Link to='/contacto'>Contactame</Link>
             </div>
         </div>
