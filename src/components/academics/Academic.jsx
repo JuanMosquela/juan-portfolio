@@ -58,7 +58,7 @@ const Academic = () => {
             <div
               className="container-buttons">
                 {courses.map(course => (
-                   <div className="border-button" style={{
+                   <div key={course.title} className="border-button" style={{
                     backgroundcolor:''
                    }}>
                      <button
@@ -80,12 +80,12 @@ const Academic = () => {
             <div className="academic-wrapper" >               
                 
                     {info?.length > 0 ? info?.map((el, index) => (
-                        <div key={el.index} className="academic-content">
+                        <div key={index} className="academic-content">
                             <h3>{el.title}</h3>
                             
                             <ul>
-                                {el.description.map(e => (
-                                    <li style={{ color: theme ? '#FFF' : '#000' }} >{e}</li>
+                                {el.description.map((e,index) => (
+                                    <li key={index} style={{ color: theme ? '#FFF' : '#000' }} >{e}</li>
                                 ))}
                             </ul>
                             <a href={el.certificate} target='blank' style={{ color: theme ? '#FFF' : '#000', border: theme ? '2px solid #FFF' : '2px solid #000'}} >Ver certificado</a>                          
