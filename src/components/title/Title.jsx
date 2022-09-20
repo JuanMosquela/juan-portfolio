@@ -8,7 +8,7 @@ const Title = ({ title, span }) => {
 
 
   return (
-    <div className="heading" style={{color: theme ? '#FFF' : '#333'}}>
+    <div data-aos='fade-up' className="heading" style={{color: theme ? '#FFF' : '#333'}}>
         <span>{span}</span>
         <h2>{title}</h2> 
     </div>   

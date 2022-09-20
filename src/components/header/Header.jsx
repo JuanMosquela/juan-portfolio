@@ -29,13 +29,13 @@ const Header = () => {
     <header className="header-container" style={{backgroundColor: theme ? "var(--blue-dark-color)" : '#FFF'}}> 
 
       <div className='header-wrapper'>
-        <Link to='/'><div className="logo" style={{color: theme ? '#FFF' : '#000'}}>mosquella</div> </Link>    
+        <Link to='/'><div className="logo" data-aos='fade-down' data-aos-delay='1000' style={{color: theme ? '#FFF' : '#000'}}>mosquella</div> </Link>    
         
         <nav className="navbar" >            
               <ul >
-                <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/'>home</NavLink>
-                <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/proyectos'>proyectos</NavLink>
-                <NavLink className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/contacto'>contacto</NavLink>              
+                <NavLink data-aos='fade-down'  className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/'>home</NavLink>
+                <NavLink  data-aos='fade-down' data-aos-delay='50' className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/proyectos'>proyectos</NavLink>
+                <NavLink data-aos='fade-down' data-aos-delay='100' className='nav-link' style={{color: theme ? '#FFF' : '#000'}} to='/contacto'>contacto</NavLink>              
                 
               </ul>                     
         </nav>

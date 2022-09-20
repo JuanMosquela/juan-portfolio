@@ -9,6 +9,8 @@ import Home from './pages/Home';
 import ProyectDetail from './components/proyectDetail/ProyectDetail';
 import ThemeProvider from './context/ThemeProvider';
 import ScrollToTop from './components/ScrollToTop';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,3 +34,5 @@ root.render(
     
   
 );
+
+AOS.init()

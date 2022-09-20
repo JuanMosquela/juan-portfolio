@@ -14,7 +14,7 @@ const Hero = () => {
   
   return (
     <section className='hero-container' >
-        <div className="content">
+        <div className="content" data-aos='fade-up' data-aos-delay='500'>
             <span>Hola, soy:</span>
             <h1>Juan Manuel Mosquella</h1>
             <span className='text'>

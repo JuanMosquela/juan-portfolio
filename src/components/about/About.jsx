@@ -91,10 +91,10 @@ const About = () => {
           <div className="skills-container">
             <Title title='Mis habilidades' span='tecnologías que conozco' />              
                 <div className="animation-wrapper">
-                <div className="icons-container">
+                <div className="icons-container" >
                   {
                     icons?.map((tec, index) => (                      
-                      <div key={tec.title} style={{ display:'flex', flexDirection:'column', alignItems:'center' }}>
+                      <div   key={tec.title} style={{ display:'flex', flexDirection:'column', alignItems:'center' }}>
                         <figure className="tec" style={{backgroundColor: theme ? '#232533' : '#e4e4e4', marginBottom:'10px'}}>
                         <img src={tec.image} key={index} alt={tec.name} />                        
                         </figure>  

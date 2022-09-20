@@ -62,6 +62,7 @@ const Academic = () => {
                     backgroundcolor:''
                    }}>
                      <button
+                       data-aos='fade-up' data-aos-delay='200' data-aos-duration='700'
                         className="academic-button" 
                         onClick={() => handleClick(course.title)} 
                         style={{ 
