@@ -1,20 +1,33 @@
 import { Box, Button, ButtonGroup, CircularProgress } from "@mui/material"
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import Title from "../title/Title"
 import { academicInfo } from "../../data/proyectsData"
 import learning from '../../img/learning.svg'
 import './academic.css'
 import { ThemeContext } from "../../context/ThemeProvider"
-import {MdKeyboardArrowRight} from 'react-icons/md'
+import {MdKeyboardArrowDown} from 'react-icons/md'
+
+
+const courses = [
+    {title: 'desarrollo web'},
+    {title:'javascript'},
+    {title:'react'},
+    {title:'node'}
+]
 
 
 const Academic = () => {
+
+    
+    
 
      
 
     const [info, setInfo] = useState('')
     
     const {theme} = useContext(ThemeContext)
+
+    
 
     
     
@@ -38,58 +51,35 @@ const Academic = () => {
   return (
     <section className="academic">
         <Title title='Certificados' span='Cursos realizados' />
-        <Box 
+        <Box        
             
-            
-            sx={{
-                display:'flex',           
-                alignItems:'center',                
-                flexWrap:'wrap',
-                p:'2rem 10%',
-                gap:'5rem',
-                
-                
-                
-                
-                
-            }}
             >
             
             <div
               className="container-buttons">
-                <button 
-                    onClick={() => handleClick('desarrollo web')} 
-                    style={{ 
-                        background: theme ? 'linear-gradient(130deg, #000 92%, transparent 90%)' : 
-                        'linear-gradient(130deg, #ccc 92%, transparent 90%)',  
-                        fontSize:'1.4rem', color: theme ? '#FFF' : '#000'
-                         }}>Desarrollo Web <MdKeyboardArrowRight className="arrow" /> </button>                
-                <button 
-                    onClick={() => handleClick('javascript')} 
-                    style={{ 
-                        background: theme ? 'linear-gradient(130deg, #000 92%, transparent 90%)' : 
-                        'linear-gradient(130deg, #ccc 92%, transparent 90%)',    
-                        fontSize:'1.4rem', color: theme ? '#FFF' : '#000'
-                         }}>Javascript <MdKeyboardArrowRight className="arrow" /></button>
-                <button 
-                    onClick={() => handleClick('react')} 
-                    style={{ 
-                        background: theme ? 'linear-gradient(130deg, #000 92%, transparent 90%)' : 
-                        'linear-gradient(130deg, #ccc 92%, transparent 90%)',  
-                        fontSize:'1.4rem', color: theme ? '#FFF' : '#000'
-                         }}>React <MdKeyboardArrowRight className="arrow" /></button>
-                <button 
-                    onClick={() => handleClick('node')} 
-                    style={{ 
-                        background: theme ? 'linear-gradient(130deg, #000 92%, transparent 90%)' : 
-                        'linear-gradient(130deg, #ccc 92%, transparent 90%)',    
-                        fontSize:'1.4rem', color: theme ? '#FFF' : '#000'
-                         }}>Node <MdKeyboardArrowRight className="arrow" /></button>
+                {courses.map(course => (
+                   <div className="border-button" style={{
+                    backgroundcolor:''
+                   }}>
+                     <button
+                        className="academic-button" 
+                        onClick={() => handleClick(course.title)} 
+                        style={{ 
+                            backgroundColor: theme ? '#232533' : '#e4e4e4',                        
+                            color: theme ? '#FFF' : '#000'
+                            }}>
+                                {course.title} <MdKeyboardArrowDown className="arrow" /> 
+                        </button>    
+                   </div>            
+                    
+
+                ))}
+                
             </div>            
             
             <div className="academic-wrapper" >               
                 
-                    {info.length > 0 ? info.map((el, index) => (
+                    {info?.length > 0 ? info?.map((el, index) => (
                         <div key={el.index} className="academic-content">
                             <h3>{el.title}</h3>
                             
@@ -107,7 +97,7 @@ const Academic = () => {
                         <img src={learning} alt="" />
                         <h3>Actualmente estudiando 
                             <Box sx={{ display:'flex' }}>
-                              <CircularProgress />
+                              <CircularProgress style={{color: '#4d4bd2'}} />
                             </Box>
                         </h3>
                     </div>)
