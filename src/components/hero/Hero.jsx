@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './hero.css';
-import JuanMosquellaCV from '../../mosquellaCV.pdf';
+import JuanMosquellaCV from '../../mosquella-cv.pdf';
 import { useTypewriter} from 'react-simple-typewriter'
 import coding from '../../img/coding.svg'
 

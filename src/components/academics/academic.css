@@ -29,6 +29,7 @@
     padding: 5px;
     border-radius: 99%;
     transition: .3s;
+    color: #4d4bd2;
 }
 
 .border-button:hover{
@@ -57,15 +58,27 @@
 }
 
 
-.academic button .arrow{
-    font-size: 2rem;
-    margin-top: 20px;
+.academic .arrow{
+    font-size: 3rem;
+    visibility: hidden;
+    
+    
+    margin-top: 10px;
+   
     
 }
 
-.academic button:hover .arrow{
+.button-hover:hover .arrow{
+    visibility: visible;
+    color: #4d4bd2;
     animation: move-down 1s ease-in infinite;
+
+
 }
+
+
+
+
 
 @keyframes move-down{
     0%{

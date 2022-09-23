@@ -24,6 +24,8 @@ const Academic = () => {
      
 
     const [info, setInfo] = useState('')
+
+    const [isHovered, setIsHovered] = useState(false)
     
     const {theme} = useContext(ThemeContext)
 
@@ -58,20 +60,24 @@ const Academic = () => {
             <div
               className="container-buttons">
                 {courses.map(course => (
-                   <div key={course.title} className="border-button" style={{
-                    backgroundcolor:''
-                   }}>
-                     <button
-                       data-aos='fade-up' data-aos-delay='200' data-aos-duration='700'
-                        className="academic-button" 
-                        onClick={() => handleClick(course.title)} 
-                        style={{ 
-                            backgroundColor: theme ? '#232533' : '#e4e4e4',                        
-                            color: theme ? '#FFF' : '#000'
-                            }}>
-                                {course.title} <MdKeyboardArrowDown className="arrow" /> 
-                        </button>    
-                   </div>            
+                <div className="button-hover" style={{ flexDirection:'column', textAlign:'center' }}>
+                    <div key={course.title} className="border-button" >
+                        <button
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
+                            data-aos='fade-up' data-aos-delay='200' data-aos-duration='700'
+                            className="academic-button" 
+                            onClick={() => handleClick(course.title)} 
+                            style={{ 
+                                backgroundColor: theme ? '#232533' : '#e4e4e4',                        
+                                color: theme ? '#FFF' : '#333'
+                                }}>
+                                {course.title} 
+                        </button>   
+                         
+                   </div>  
+                   <MdKeyboardArrowDown className="arrow" />  
+                </div>        
                     
 
                 ))}
