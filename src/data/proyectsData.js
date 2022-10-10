@@ -63,24 +63,24 @@ const proyectsData = [
     },
     {
         id:5,
-        title: 'Netflix Clone',
-        description: 'Clon deNetflix en el cual utilizo la api de tmdb para poder desplegar diferentes peliculas de acuerdo a categorias y filtros de busqueda. La UI esta hecha con Material UI.',
-        img_URL: netflix,
+        title: 'Proyecto Aixa',
+        description: 'Proyecto del cual forme parte gracias a haber sido seleccionado en el top 10 de mejores estudiantes de Coderhouse. En este proyecto tuve la fortuna de trabjar en un equipo de trabajo, la UI esta desarrollada en React y se uso Git para trabajar de forma organizada. ',
+        img_URL: aixa,
         technologies: [ react,mu5,javascript, html, css, git ],
         link:{
-            github: 'https://github.com/JuanMosquela/netflix-clone',
-            deploy:'https://netflix-clone-xi-tawny.vercel.app/'
+            github: 'https://github.com/JuanMosquela/proyecto-aixa',
+            deploy:'https://proyecto-aixa.vercel.app/'
         } 
     },  
     {
         id:4,
         title:'Fit-Commerce',
-        description: 'Juego de memoria creado con JavaScript, HTML y CSS, consumiendo una api externa.',
+        description: 'E-commerce desarrollado con React JS para la UI, Firebase como base de datos y almacenamiento de productos. ',
         img_URL: commerce,
         technologies: [ react, mu5,  javascript, css , html, git],
         link:{
-            github: 'https://github.com/JuanMosquela/e-commerce-fit',
-            deploy:'https://e-commerce-fit.vercel.app/'
+            github: 'https://github.com/JuanMosquela/fit-e-commerce',
+            deploy:'https://fit-e-commerce.vercel.app/'
         }
     },  
     
