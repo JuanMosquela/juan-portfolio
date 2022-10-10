@@ -23,7 +23,7 @@ const Academic = () => {
 
      
 
-    const [info, setInfo] = useState('')
+    const [info, setInfo] = useState(null)
 
     const [isHovered, setIsHovered] = useState(false)
     
@@ -86,7 +86,7 @@ const Academic = () => {
             
             <div className="academic-wrapper" >               
                 
-                    {info?.length > 0 ? info?.map((el, index) => (
+                    {info?.map((el, index) => (
                         <div key={index} className="academic-content">
                             <h3>{el.title}</h3>
                             
@@ -95,19 +95,19 @@ const Academic = () => {
                                     <li key={index} style={{ color: theme ? '#FFF' : '#000' }} >{e}</li>
                                 ))}
                             </ul>
-                            <a href={el.certificate} target='blank' style={{ color: theme ? '#FFF' : '#000', border: theme ? '2px solid #FFF' : '2px solid #000'}} >Ver certificado</a>                          
+                            {
+                                el.certificate
+                                ? <a href={el.certificate} target='blank' style={{ color: theme ? '#FFF' : '#000', border: theme ? '2px solid #FFF' : '2px solid #000'}} >Ver certificado</a>   
+                                : <div className="missing">
+                                    <CircularProgress size='4rem' sx={{ color: '#dad9dfbe'}} />
+                                    Actualmente estudiando
+                                </div>                       
+
+                            }
                             
                         </div>                       
                         
-                    )) : (
-                    <div className="incomplete">
-                        <img src={learning} alt="" />
-                        <h3>Actualmente estudiando 
-                            <Box sx={{ display:'flex' }}>
-                              <CircularProgress style={{color: '#4d4bd2'}} />
-                            </Box>
-                        </h3>
-                    </div>)
+                    ))
                 }
                     
                 

@@ -44,6 +44,14 @@ export const academicInfo = [
         certificate: 'https://www.coderhouse.com/certificados/62e1b706e2776700198e730f'
        
         
+    },
+    {
+        title: 'node',
+        duration:'Julio 2022 - Actualidad',
+        description: ['Servidores Web', 'Express avanzado', 'Websockets', 'SQL y MongoDB'],
+        certificate: null
+       
+        
     }
 ]
 
