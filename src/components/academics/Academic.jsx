@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup, CircularProgress } from "@mui/material"
+import { Box, Button, ButtonGroup, CircularProgress, Modal } from "@mui/material"
 import { useContext, useEffect, useState } from "react"
 import Title from "../title/Title"
 import { academicInfo } from "../../data/proyectsData"
@@ -16,10 +16,11 @@ const courses = [
 ]
 
 
-const Academic = () => {
 
+
+const Academic = () => {
     
-    
+    const [open, setOpen] = useState(false)
 
      
 
@@ -29,12 +30,31 @@ const Academic = () => {
     
     const {theme} = useContext(ThemeContext)
 
+    const style = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: 400,
+        fontFamily:'Nunito',      
+        
+        boxShadow: 24,
+        borderRadius: '20px',
+        backgroundColor: theme ? 'var(--blue-dark-color)' : '#FFF',
+        p: 4
+        
+        
+      };
+
     
 
     
     
 
     const handleClick = (academic) => {
+
+        setOpen(true)
+
         const foundAcademic = academicInfo.filter(el => {
             return el.title === academic
         }) 
@@ -44,6 +64,8 @@ const Academic = () => {
         }             
 
     }
+
+    const handleClose = () => setOpen(false)
 
     
 
@@ -84,11 +106,24 @@ const Academic = () => {
                 
             </div>            
             
-            <div className="academic-wrapper" >               
-                
-                    {info?.map((el, index) => (
-                        <div key={index} className="academic-content">
-                            <h3>{el.title}</h3>
+            <div className="academic-wrapper" > 
+
+                    <Modal
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                        
+                    >
+                        <Box sx={style}>
+                        {info?.map((el, index) => (
+
+                        <div 
+                        
+                            
+                            key={index} 
+                            className="academic-content">
+                            <h3 style={{ color: theme ? '#FFF' : '#000' }}>{el.title}</h3>
                             
                             <ul>
                                 {el.description.map((e,index) => (
@@ -106,9 +141,19 @@ const Academic = () => {
                             }
                             
                         </div>                       
-                        
-                    ))
-                }
+
+                        ))
+                        }
+                        </Box>
+                    </Modal>  
+
+
+
+
+
+
+                
+                    
                     
                 
             </div>
