@@ -60,8 +60,8 @@ const Academic = () => {
             <div
               className="container-buttons">
                 {courses.map(course => (
-                <div className="button-hover" style={{ flexDirection:'column', textAlign:'center' }}>
-                    <div key={course.title} className="border-button" >
+                <div  key={course.title} className="button-hover" style={{ flexDirection:'column', textAlign:'center' }}>
+                    <div  className="border-button" >
                         <button
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}

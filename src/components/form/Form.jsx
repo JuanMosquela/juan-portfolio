@@ -132,7 +132,7 @@ const Form = () => {
           {
             loading 
             ? 
-            <button >
+            <button type="submit" >
               Enviando
               <CircularProgress />
             </button> 
