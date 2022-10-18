@@ -15,6 +15,7 @@ import sass from '../../img/sass.png'
 import typescript from '../../img/typescript.png'
 import next from '../../img/next.png'
 import bootstrap from '../../img/bootstrap.png'
+import mongo from '../../img/mongo.png'
 
 
 
@@ -45,10 +46,7 @@ const About = () => {
       title: 'Redux',
       image: redux
     },
-    {
-      title: 'Next JS',
-      image: next
-    },
+    
     {
       title: 'Typescript',
       image: typescript
@@ -69,6 +67,10 @@ const About = () => {
       title: 'Node JS',
       image: node
     },
+    {
+      title:'Mongo DB',
+      image: mongo
+    }
     
     
     
