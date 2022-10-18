@@ -38,8 +38,10 @@ const ProyectDetail = () => {
             <img className="proyect-img" src={proyect.img_URL} alt="" />
             <div className="proyect-info">
                 <h3>{proyect.title}</h3>
+                <h4>Tecnologias utilizadas :</h4>
                 
-                <div className="category-container">                   
+                <div className="category-container"> 
+                                      
                     {
                         proyect.technologies?.map(tec => (
                             

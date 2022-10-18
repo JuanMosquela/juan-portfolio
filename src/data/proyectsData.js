@@ -14,9 +14,9 @@ import redux from '../img/redux.png'
 import mu5 from '../img/mu5.png'
 import sass from '../img/sass.png'
 import typescript from '../img/typescript.png'
-import next from '../img/next.png'
+
 import bootstrap from '../img/bootstrap.png'
-import netflix from '../img/netflix.png'
+
 
 
 export const academicInfo = [
@@ -85,7 +85,7 @@ const proyectsData = [
         title:'Fit-Commerce',
         description: 'E-commerce desarrollado con React JS para la UI, Firebase como base de datos y almacenamiento de productos. ',
         img_URL: commerce,
-        technologies: [ react, mu5,  javascript, css , html, git],
+        technologies: [ react,redux, typescript, mu5, css, git],
         link:{
             github: 'https://github.com/JuanMosquela/fit-e-commerce',
             deploy:'https://fit-e-commerce.vercel.app/'
