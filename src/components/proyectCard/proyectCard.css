@@ -1,5 +1,5 @@
 .proyect-card{        
-    height: 400px;
+    height: 360px;
     min-width: 200px;
     padding: 0 20px;
     
@@ -23,6 +23,6 @@
 
 @media (max-width:500){
     .proyect-card{
-        padding: 0;
+        
     }
 }
