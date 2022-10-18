@@ -6,8 +6,11 @@ import emailjs, {send} from 'emailjs-com'
 import './form.css'
 import Title from "../title/Title";
 import toast, { Toaster } from 'react-hot-toast';
+import { Button, CircularProgress } from "@mui/material";
 
 const Form = () => {   
+
+  const [loading, setLoading] = useState(false)
 
   const { theme} = useContext(ThemeContext)
 
@@ -19,16 +22,12 @@ const Form = () => {
   })
 
     const SendEmail = (object) => {
-      
+           
       
       let promise = emailjs.send("service_ijebytp", "template_sr0vrs4", object,"uOFt-AsEDNOS6pJPk" )
       
           .then((result) => {
-            setTimeout(() => {             
-              
-              resetForm()             
-              
-            }, 1000);
+            resetForm() 
           }, (error) => {
               console.log(error.text)
           })
@@ -45,6 +44,9 @@ const Form = () => {
             }
           )
   }
+
+
+  
   
 
   const {values, errors,handleSubmit, handleChange, handleBlur, touched, resetForm} = useFormik({
@@ -53,13 +55,29 @@ const Form = () => {
       email:'',
       message:''
     },
-    onSubmit: (values) => {      
-      SendEmail(values)     
+    onSubmit: (values) => { 
+      
+      console.log(loading)
+      
+      try {
+        SendEmail(values)
+        
+        
+      } catch (error) {
+         console.log(error)
+         
+        
+      }finally{
+        setLoading(false)
+      }     
+        
        
     },    
     validationSchema: basicSchemas  
 
   })  
+
+  
   
 
   return (
@@ -111,13 +129,25 @@ const Form = () => {
             </textarea>
               { touched.message && errors.message && <span className="error">{errors.message}</span>}
           </div>
-          <button type="submit">Enviar</button>
+          {
+            loading 
+            ? 
+            <button >
+              Enviando
+              <CircularProgress />
+            </button> 
+            : 
+            <button onClick={() => setLoading(true)}  type="submit">Enviar</button>
+          }
+          
+          
+          
           
         </form>
         
 
         <Toaster
-          position="top-center"
+          position="top-right"
           reverseOrder={false}
           gutter={8}
           containerClassName=""
@@ -129,7 +159,7 @@ const Form = () => {
             style: {
               background: '#f5f5f5',
               color: '#333',
-              fontSize:'1.8rem',
+              fontSize:'1.6rem',
               minWidth:'200px'
             },
 
