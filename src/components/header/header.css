@@ -1,152 +1,130 @@
-.header-container{
-    display: flex;
-    position: fixed;
+.header-container {
+  display: flex;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  opacity: 0.9;
+
+  align-items: center;
+  gap: 5rem;
+  padding: 1.4rem;
+  z-index: 1000;
+}
+
+.header-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  width: 100%;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.theme-icons {
+  font-size: 2.6rem;
+  z-index: 1000;
+}
+
+.header-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+.logo {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #000;
+}
+
+.logo::first-letter {
+  color: #4f4fe2;
+}
+
+.header-container figure img {
+  width: 60px;
+}
+
+.navbar ul .nav-link {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.lat-menu {
+  display: none;
+  font-size: 3rem;
+}
+
+.lat-navbar {
+  display: none;
+}
+
+.navbar ul {
+  font-family: "Poppins";
+}
+
+@media (max-width: 500px) {
+  .header-container {
     height: 60px;
-    width:100%;  
-    opacity: .9;
-    
-    
-     
-       
-       
-    align-items: center;   
-    gap: 5rem;
-    padding: 1.4rem;       
-    z-index: 1000;
-    
-    
-}
-
-.header-wrapper{
-    position: relative;
-    display: flex;
+  }
+  .header-wrapper {
     justify-content: space-between;
-    padding: 0 10%;    
-    width: 100%;
-    align-items: center;
-}
+    padding: 0;
+  }
 
-
-
-
-
-.theme-icons{
-    
-    font-size: 2.6rem;   
-    z-index: 1000;
-    
-}
-
-.header-container ul {  
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;     
-       
-    
-}
-
-.logo{
-    font-family: 'Poppins';
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 3rem;
-    color: #000;   
-   
-}
-
-.logo::first-letter{
-    color: #4f4fe2;
-}
-
-.header-container figure img{
-    width: 60px;
-}
-
-
-
-.navbar ul .nav-link{
-    font-size: 2rem;       
-    text-transform: capitalize;       
-    
-    
-}
-
-
-
-.lat-menu{
+  .navbar {
     display: none;
-    font-size: 3rem;
-    
+  }
+
+  .lat-navbar {
+    display: block;
+    transition: 0.4s;
+    transform: translateX(100%);
+    font-family: "Poppins";
+    position: absolute;
+    top: 50px;
+    right: -15px;
+    width: 75vw;
+    height: 100vh;
+    background-image: linear-gradient(
+      to right top,
+      #3737c9,
+      #4d4bd2,
+      #605edb,
+      #7372e4,
+      #8585ec
+    );
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+
+  .lat-navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 70%;
+    font-size: 2rem;
+  }
+
+  .lat-navbar ul a {
+    color: #fff;
+  }
+
+  .theme-icons {
+    left: 10px;
+    font-size: 1.8rem;
+  }
+
+  .lat-menu {
+    display: block;
+  }
 }
-
-.lat-navbar{
-    display: none;
-}
-
-
-
-.navbar ul{
-    font-family: 'Poppins';
-    
-}
-
-
-@media (max-width:500px){
-
-    .header-container{
-        height: 60px;
-        
-    }
-    .header-wrapper{
-        justify-content: space-between;
-        padding: 0;
-        
-    }
-
-    .navbar{
-        display: none;
-    }
-   
-
-    .lat-navbar{
-        display: block;
-        transition: 0.4s;
-        transform: translateX(100%);
-        font-family: 'Poppins';
-        position: absolute;
-        top: 50px;       
-        right: -15px;
-        width: 75vw;
-        height: 100vh; 
-        background-image: linear-gradient(to right top, #3737c9, #4d4bd2, #605edb, #7372e4, #8585ec);              
-        box-shadow: 1px 5px 15px rgba(0, 0, 0, .2); 
-        color: #FFF; 
-    }
-
-    .lat-navbar ul{
-        display: flex;        
-        justify-content: space-evenly;
-        flex-direction: column;       
-        height: 70%;
-        font-size: 2rem;
-        
-    }
-
-    .lat-navbar ul a{
-        color: #FFF;
-    }
-
-    .theme-icons{
-        left: 10px;
-        font-size: 1.8rem;
-    }
-
-    .lat-menu{
-        display: block;    
-        
-        
-    }
-}
-
-

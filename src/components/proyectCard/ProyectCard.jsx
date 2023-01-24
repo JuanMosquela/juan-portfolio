@@ -1,14 +1,12 @@
-import './proyectCard.css';
-
+import "./proyectCard.css";
 
 const ProyectCard = ({ img }) => {
   return (
     <div className="proyect-card">
-        <figure>
-            <img src={img} alt="" />
-        </figure>       
-        
+      <figure>
+        <img src={img} alt="" />
+      </figure>
     </div>
-  )
-}
-export default ProyectCard
+  );
+};
+export default ProyectCard;
