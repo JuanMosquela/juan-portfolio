@@ -17,6 +17,7 @@ import next from "../../img/next.png";
 import bootstrap from "../../img/bootstrap.png";
 import mongo from "../../img/mongo.png";
 import tailwind from "../../img/tailwind-css.png";
+import postgre from "../../img/postgre.png";
 
 const About = () => {
   const { theme } = useContext(ThemeContext);
@@ -70,6 +71,10 @@ const About = () => {
     {
       title: "Mongo DB",
       image: mongo,
+    },
+    {
+      title: "PostgreSQL",
+      image: postgre,
     },
   ];
 
