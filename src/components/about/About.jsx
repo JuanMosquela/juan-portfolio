@@ -18,65 +18,66 @@ import bootstrap from "../../img/bootstrap.png";
 import mongo from "../../img/mongo.png";
 import tailwind from "../../img/tailwind-css.png";
 import postgre from "../../img/postgre.png";
+import { icons } from "../../data/data";
 
 const About = () => {
   const { theme } = useContext(ThemeContext);
 
-  const icons = [
-    {
-      title: "HTML",
-      image: html,
-    },
-    {
-      title: "CSS",
-      image: css,
-    },
-    {
-      title: "Javascript",
-      image: javascript,
-    },
-    {
-      title: "React JS",
-      image: react,
-    },
-    {
-      title: "Redux",
-      image: redux,
-    },
-    {
-      title: "Tailwind",
-      image: tailwind,
-    },
+  // const icons = [
+  //   {
+  //     title: "HTML",
+  //     image: html,
+  //   },
+  //   {
+  //     title: "CSS",
+  //     image: css,
+  //   },
+  //   {
+  //     title: "Javascript",
+  //     image: javascript,
+  //   },
+  //   {
+  //     title: "React JS",
+  //     image: react,
+  //   },
+  //   {
+  //     title: "Redux",
+  //     image: redux,
+  //   },
+  //   {
+  //     title: "Tailwind",
+  //     image: tailwind,
+  //   },
 
-    {
-      title: "Typescript",
-      image: typescript,
-    },
-    {
-      title: "Git",
-      image: git,
-    },
-    {
-      title: "Sass",
-      image: sass,
-    },
-    {
-      title: "Bootstrap",
-      image: bootstrap,
-    },
-    {
-      title: "Node JS",
-      image: node,
-    },
-    {
-      title: "Mongo DB",
-      image: mongo,
-    },
-    {
-      title: "PostgreSQL",
-      image: postgre,
-    },
-  ];
+  //   {
+  //     title: "Typescript",
+  //     image: typescript,
+  //   },
+  //   {
+  //     title: "Git",
+  //     image: git,
+  //   },
+  //   {
+  //     title: "Sass",
+  //     image: sass,
+  //   },
+  //   {
+  //     title: "Bootstrap",
+  //     image: bootstrap,
+  //   },
+  //   {
+  //     title: "Node JS",
+  //     image: node,
+  //   },
+  //   {
+  //     title: "Mongo DB",
+  //     image: mongo,
+  //   },
+  //   {
+  //     title: "PostgreSQL",
+  //     image: postgre,
+  //   },
+  // ];
 
   return (
     <section id="about">

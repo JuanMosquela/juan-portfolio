@@ -1,23 +1,23 @@
 import memo from "../img/memo.png";
-import physical from "../img/physical.png";
-import cart from "../img/cart.png";
-import commerce from "../img/e-commerce.png";
 import fitecommerce from "../img/fit-ecommerce.jpg";
+import todoApp from "../img/todo-app.png";
 
-import youtube from "../img/youtube.png";
 import html from "../img/html.png";
 import css from "../img/css.png";
 import git from "../img/git.png";
 import javascript from "../img/javascript.png";
 import react from "../img/react.png";
 import node from "../img/node.png";
-import mongoo from "../img/mongo.png";
+
 import redux from "../img/redux.png";
 import mu5 from "../img/mu5.png";
 import sass from "../img/sass.png";
 import typescript from "../img/typescript.png";
 import bootstrap from "../img/bootstrap.png";
-import tailwindcss from "../img/tailwind-css.png";
+import tailwind from "../img/tailwind-css.png";
+import mongo from "../img/mongo.png";
+import postgre from "../img/postgre.png";
+import express from "../img/express.png";
 
 export const academicInfo = [
   {
@@ -97,7 +97,7 @@ const proyectsData = [
     description:
       "Proyecto fullstack en el cual los usuarios pueden autenticarse , realizar operaciones CRUD, filtrar y ordenar productos y finalmente comprarlos por medio de una integracion con Mercado Pago.",
     img_URL: fitecommerce,
-    technologies: [react, node, tailwindcss, mu5, javascript, git],
+    technologies: [react, node, express, tailwind, mu5, javascript],
     link: {
       github: "https://github.com/JuanMosquela/e-commerce-backend",
       deploy: "https://fit-commerce.onrender.com",
@@ -106,16 +106,75 @@ const proyectsData = [
 
   {
     id: 3,
-    title: "Carrito de Compra",
+    title: "Todo App",
     description:
-      "Logica de carrito con Javascript, peticion de datos y almacenamiento en LocalStorage. En este proyecto se simula el proceso de compra de un e-commerce, cuenta con peticiones asincronas, cuenta con funciones de modificacion, borrado y agregado de productos",
-    img_URL: cart,
-    technologies: [javascript, css, html, git, bootstrap],
+      "Listado de tareas basico que nos pedira crearnos un usuario para llevar un registro de nuestras acciones. Cada todo se almacena en una base de datos al momento de ser creada, ademas podemos modificarlos, eliminarlos. La aplicacion cuenta la funcionalidad de arrastrar un todo a otra posicion en caso de querer darle mas prioridad",
+    img_URL: todoApp,
+    technologies: [react, typescript, redux, node, express, postgre],
     link: {
-      github: "https://github.com/JuanMosquela/ShoppingCart",
-      deploy: "https://juanmosquela.github.io/ShoppingCart/",
+      github: "https://github.com/JuanMosquela/todo-app",
+      deploy: "https://todo-app-kappa-indol.vercel.app/",
     },
   },
 ];
 
-export default proyectsData;
+const icons = [
+  {
+    title: "HTML",
+    image: html,
+  },
+  {
+    title: "CSS",
+    image: css,
+  },
+  {
+    title: "Javascript",
+    image: javascript,
+  },
+  {
+    title: "React JS",
+    image: react,
+  },
+  {
+    title: "Redux",
+    image: redux,
+  },
+  {
+    title: "Tailwind",
+    image: tailwind,
+  },
+  {
+    title: "Typescript",
+    image: typescript,
+  },
+  {
+    title: "Git",
+    image: git,
+  },
+  {
+    title: "Sass",
+    image: sass,
+  },
+  {
+    title: "Bootstrap",
+    image: bootstrap,
+  },
+  {
+    title: "Node JS",
+    image: node,
+  },
+  {
+    title: "Express",
+    image: express,
+  },
+  {
+    title: "Mongo DB",
+    image: mongo,
+  },
+  {
+    title: "PostgreSQL",
+    image: postgre,
+  },
+];
+
+export { proyectsData, icons };

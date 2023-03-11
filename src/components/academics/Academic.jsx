@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import { useContext, useEffect, useState } from "react";
 import Title from "../title/Title";
-import { academicInfo } from "../../data/proyectsData";
+import { academicInfo } from "../../data/data";
 import learning from "../../img/learning.svg";
 import "./academic.css";
 import { ThemeContext } from "../../context/ThemeProvider";
