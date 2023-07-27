@@ -1,6 +1,8 @@
 import memo from "../img/memo.png";
 import fitecommerce from "../img/fit-ecommerce.jpg";
 import todoApp from "../img/todo-app.png";
+import promptopia from "../img/promptopia.png";
+import flexibble from "../img/flexibble.png";
 
 import html from "../img/html.png";
 import css from "../img/css.png";
@@ -8,6 +10,7 @@ import git from "../img/git.png";
 import javascript from "../img/javascript.png";
 import react from "../img/react.png";
 import node from "../img/node.png";
+import next from "../img/next.png";
 
 import redux from "../img/redux.png";
 import mu5 from "../img/mu5.png";
@@ -18,6 +21,7 @@ import tailwind from "../img/tailwind-css.png";
 import mongo from "../img/mongo.png";
 import postgre from "../img/postgre.png";
 import express from "../img/express.png";
+import graphql from "../img/graphql.png";
 
 export const academicInfo = [
   {
@@ -81,6 +85,18 @@ export const academicInfo = [
 const proyectsData = [
   {
     id: 1,
+    title: "Promptopia",
+    description:
+      "Promptopia es una app que le permite a sus usuarios crear y compartir prompts que pueden ser utilizados con frecuencia en ChatGPT. ",
+    img_URL: promptopia,
+    technologies: [next, javascript, mongo, tailwind],
+    link: {
+      github: "https://github.com/JuanMosquela/Promptopia",
+      deploy: "https://promptopia-liart.vercel.app/",
+    },
+  },
+  {
+    id: 2,
     title: "Rick & Morty: Memo",
     description:
       "Juego de memoria creado con JavaScript, HTML y CSS, consumiendo una api externa. El juego consiste en buscar los pares de cada personaje sin perder todas tus vidas en el proceso. El juego esta programado para que cada vez que el usuario incie una nueva partida los personajes cambien de lugar aleatoriamente",
@@ -92,7 +108,7 @@ const proyectsData = [
     },
   },
   {
-    id: 2,
+    id: 3,
     title: "Fit-Ecommerce",
     description:
       "Proyecto fullstack en el cual los usuarios pueden autenticarse , realizar operaciones CRUD, filtrar y ordenar productos y finalmente comprarlos por medio de una integracion con Mercado Pago.",
@@ -105,15 +121,15 @@ const proyectsData = [
   },
 
   {
-    id: 3,
-    title: "Todo App",
+    id: 4,
+    title: "Flexibble",
     description:
-      "Listado de tareas basico que nos pedira crearnos un usuario para llevar un registro de nuestras acciones. Cada todo se almacena en una base de datos al momento de ser creada, ademas podemos modificarlos, eliminarlos. La aplicacion cuenta la funcionalidad de arrastrar un todo a otra posicion en caso de querer darle mas prioridad",
-    img_URL: todoApp,
-    technologies: [react, typescript, redux, node, express, postgre],
+      "Clon de Dribble en el cual los diferentes usuarios podran compartir sus projectos personales, tambien pueden editarlos y borrarlos.",
+    img_URL: flexibble,
+    technologies: [next, react, typescript, graphql],
     link: {
-      github: "https://github.com/JuanMosquela/todo-app",
-      deploy: "https://todo-app-kappa-indol.vercel.app/",
+      github: "https://github.com/JuanMosquela/Flexibble",
+      deploy: "https://flexibble-gules.vercel.app/",
     },
   },
 ];
@@ -134,6 +150,10 @@ const icons = [
   {
     title: "React JS",
     image: react,
+  },
+  {
+    title: "Next JS",
+    image: next,
   },
   {
     title: "Redux",
